@@ -6,12 +6,21 @@ Themes for Protonmail.com - Thoughtfully created.
 ## Material Proton Theme
 
 
-Main Landing Page
+### Main Landing Page
 ![main](https://i.imgur.com/vRK3ian.png)
 
 
-Compose Message screen
-![compose](https://i.imgur.com/YBe6dJD.png)
+### Compose Message screen
+![compose](https://i.imgur.com/XJBnDkx.png)
 
-Setting page (Appearance)
+### Setting page (Appearance)
 ![settings](https://i.imgur.com/wVu6Boi.png)
+
+This is one of many themes that will be available.  All the code is available to view.  All that is needed is to copy and paste it into your Settings>Appearance>Custom Theme section.
+
+None of this code exposes you to any risks.  All that has been done is small UI color changes that will enhance the user experience.
+
+
+If you find this code helpful or worthwhile, please consider donating.
+
+
