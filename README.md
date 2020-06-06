@@ -1,6 +1,7 @@
 # Protonmail Themes
 Themes for Protonmail.com - Thoughtfully created.
 
+[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://paypal.me/yawnzz?locale.x=en_US)
 
 
 ## Material Proton Theme
@@ -23,4 +24,4 @@ None of this code exposes you to any risks.  All that has been done is small UI 
 
 If you find this code helpful or worthwhile, please consider donating.
 
-
+[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://paypal.me/yawnzz?locale.x=en_US)
