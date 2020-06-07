@@ -30,7 +30,7 @@ Themes for Protonmail.com - Thoughtfully created.
 
 ## Compose Message screen
 
-![comp](https://i.imgur.com/uY2l7l8)
+![comp](https://i.imgur.com/uY2l7l8.png)
 
 
 ## Search and Advanced Search box
