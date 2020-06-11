@@ -3,6 +3,11 @@ Themes for Protonmail.com - Thoughtfully created.
 
 [![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://paypal.me/yawnzz?locale.x=en_US)
 
+## GMail Version  **coming soon**
+### Preview
+
+![gmailv2](https://i.imgur.com/9oPDeKb.png)
+
 
 ## Material Proton Theme
 
