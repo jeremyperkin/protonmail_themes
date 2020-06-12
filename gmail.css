@@ -1,11 +1,27 @@
-/**********************************************/
-/*	created by: jeremyperkin.            		*/        
-/*	github: https://github.com/jeremyperkin/protonmail_themes/gmail.css */
-/*	reddit: yawn_zz					*/
+/***********************************************
+created by: jeremyperkin.                    
+github: https://github.com/jeremyperkin/protonmail_themes/gmail.css
+reddit: yawn_zz
 
-/*	NOTE: If there are any issues please open a ticket.	*/
-/***********************************************/
-
+NOTE: If there are any issues please open a ticket.
+***********************************************/
+:root {
+	--bgcolor-item-column-list:#FFF !important;
+	--bgcolor-unread-item-column-list:#FFF !important;
+	--bgcolor-view-column-detail:#FFF;
+	--bgcolor-main-area:#FFF !important;
+	--bgcolor-subnav:initial #f4f7f7 !important;
+	--bgcolor-toolbar:#FFF !important;
+	--color-subnav-link:#d93025 !important;
+	--color-main-area:#202124 !important;
+	--fillcolor-icons:#d93025 !important;
+	--bgcolor-disabled-checkboxes-radios:#42414d !important;
+	--bgcolor-item-column-active:#FFF !important;
+	--bordercolor-input:transparent !important;
+	--bgcolor-input: #f1f3f4 !important;
+	--bgcolor-highlight:#fce8e6 !important;
+	--color-input:#202124 !important;
+   }
 .headerDesktop-container,
 .headerSecured-container,
 .headerSecuredDesktop-logo {
@@ -29,8 +45,9 @@
     position: absolute;
     left: 0;
     top: 0;
-    -webkit-box-shadow: 1px 1px 3px rgba(0,0,0,.33),0 0 2px rgba(0,0,0,.33);
-    box-shadow: 1px 1px 3px rgba(0,0,0,.33),0 0 2px rgba(0,0,0,.33);
+    -moz-box-shadow:    3px 3px 5px 6px #ccc;
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+    box-shadow:         3px 3px 5px 6px #ccc;
     z-index: 2;
     border-radius: 0;
     padding: 35px 0 0;
@@ -49,12 +66,6 @@ html.protonmail .placeholder-white:-moz-placeholder,
 html.protonmail .placeholder-white::placeholder {
     color: #202124 !important;
 }
-
-.search-form-fieldset-input {
-    color: #202124;
-    padding-left: 10px;
-}
-
 .search-form-fieldset {
     background: #f1f3f4 !important;
     color: #202124;
@@ -69,6 +80,17 @@ html.protonmail .placeholder-white::placeholder {
     position: relative;
     transition: background 100ms ease-in,width 100ms ease-out;
   }
+.search-form-fieldset:focus-within {
+    -moz-box-shadow:    3px 3px 5px 6px #ccc;
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+    box-shadow:         3px 3px 5px 6px #ccc; }
+
+.search-form-fieldset-input {
+    padding-left: 10px;
+    color: #202124;
+    padding-left: 10px;  
+    background: #f1f3f4 !important;
+    }
 
 .searchForm-action-button-advanced,
 .searchForm-action-button-clear, 
@@ -823,7 +845,7 @@ body #conversation-list-rows .conversation .size {
 .pm_form select, 
 .pm_form textarea,
 .pm_form .pm_select {
-    border: 1px solid #43413c !important}
+    border: 1px solid transparent !important}
 
 .pm_form input[type="email"]:focus,
 .pm_form input[type="number"]:focus, 
