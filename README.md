@@ -4,7 +4,7 @@ Themes for Protonmail.com - Thoughtfully created.
 [![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://paypal.me/yawnzz?locale.x=en_US)
 
 ## GMail Theme
-[](https://github.com/jeremyperkin/protonmail_themes/blob/master/gmail.css "## GMail Theme")
+![](https://github.com/jeremyperkin/protonmail_themes/blob/master/gmail.css "## GMail Theme")
 ![gmailv3](https://i.imgur.com/wo3bE4W.png)
 
 
