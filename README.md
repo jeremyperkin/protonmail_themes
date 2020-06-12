@@ -5,7 +5,7 @@ Themes for Protonmail.com - Thoughtfully created.
 
 ## GMail Theme
 
-![gmailv3](https://i.imgur.com/zlCFhgq.png)
+![gmailv3](https://i.imgur.com/wo3bE4W.png)
 
 
 ## Material Proton Theme
