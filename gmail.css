@@ -355,7 +355,8 @@ body section.sidebar div.labels ul li a {
     opacity: 1; }
 
 body section.sidebar div.labels ul li a:hover {
-    color: #fce8e6;
+    color: #202124;
+    background: #fce8e6;
     opacity: 1; }
 
 body section.sidebar div.footer div.link a, body section.sidebar a.version {
