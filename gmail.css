@@ -5,23 +5,9 @@ reddit: yawn_zz
 
 NOTE: If there are any issues please open a ticket.
 ***********************************************/
-:root {
-	--bgcolor-item-column-list:#FFF !important;
-	--bgcolor-unread-item-column-list:#FFF !important;
-	--bgcolor-view-column-detail:#FFF;
-	--bgcolor-main-area:#FFF !important;
-	--bgcolor-subnav:initial #f4f7f7 !important;
-	--bgcolor-toolbar:#FFF !important;
-	--color-subnav-link:#d93025 !important;
-	--color-main-area:#202124 !important;
-	--fillcolor-icons:#d93025 !important;
-	--bgcolor-disabled-checkboxes-radios:#42414d !important;
-	--bgcolor-item-column-active:#FFF !important;
-	--bordercolor-input:transparent !important;
-	--bgcolor-input: #f1f3f4 !important;
-	--bgcolor-highlight:#fce8e6 !important;
-	--color-input:#202124 !important;
-   }
+
+/*FIX FOR SEARCH HAS BEEN IMPLEMENTED NOW TEXT SHOULD BE MORE VISIBLE*/
+
 .headerDesktop-container,
 .headerSecured-container,
 .headerSecuredDesktop-logo {
@@ -62,10 +48,13 @@ NOTE: If there are any issues please open a ticket.
     justify-content: space-between;
 }
 
-html.protonmail .placeholder-white:-moz-placeholder, 
-html.protonmail .placeholder-white::placeholder {
-    color: #202124 !important;
+html.protonmail ::-webkit-input-placeholder {
+    color:#202124 !important;
 }
+html.protonmail :-moz-placeholder,
+html.protonmail ::-moz-placeholder {
+    color:#202124 !important;}
+
 .search-form-fieldset {
     background: #f1f3f4 !important;
     color: #202124;
