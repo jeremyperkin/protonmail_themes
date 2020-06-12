@@ -6,11 +6,59 @@ reddit: yawn_zz
 NOTE: If there are any issues please open a ticket.
 ***********************************************/
 
+
+/*THINGS YOU MAY WANT TO ENABLE TO DISABLE*/
+
+/*TOOLTIP comment out or remove the line display: none*/
+.tooltip {
+    font-size: 10px;
+    height: 28px;
+    display: none !important;
+}
+
+/*PROTONMAIL LOGO to add back just comment the below out*/
 .headerDesktop-container,
 .headerSecured-container,
 .headerSecuredDesktop-logo {
     background-color: #fff !important;
     cursor: default !important}
+
+/*COMPOSE BUTTON - remove background image and colors*/
+.sidebarApp-container .sidebar-btn-compose,
+.sidebarApp-container .sidebar-btn-compose:active {
+    box-shadow: 0 1px 2px 0 rgba(60,64,67,0.302),0 1px 3px 1px rgba(60,64,67,0.149);
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'Google Sans', Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+    font-size: .875rem;
+    letter-spacing: .25px;
+    text-items: center;
+    background-color: #fff;
+    background-image: url(https://i.imgur.com/ieojGGR.png) !important;
+    background-position: left;
+    background-position-y: 6 !important;
+    background-position-x: 8px !important;
+    background-repeat: no-repeat;
+    -moz-border-radius: 24px;
+    border-radius: 24px;
+    color: #3c4043;
+    display: inline;
+    font-weight: 800;
+    height: 48px;
+    min-width: 56px;
+    overflow: hidden;
+    padding-left: 19px;
+    text-transform: none;
+    border-color: none;
+}
+.sidebarApp-container .sidebar-btn-compose:hover,
+.sidebarApp-container .sidebar-btn-compose:focus {
+    background-color: transparent !important;
+    color: #3c4043 !important; }
+
+
+
+/******/
+
 
 .searchForm-container {
     display: -webkit-inline-flex;
@@ -75,7 +123,6 @@ html.protonmail ::-moz-placeholder {
     color: #202124;
     padding-left: 10px;  
     background: #f1f3f4 !important;
-transition:background 100ms ease-in,width 100ms ease-out;
 }
 
 .searchForm-action-button-advanced,
@@ -236,37 +283,7 @@ transition:background 100ms ease-in,width 100ms ease-out;
 	will-change: transform;
 }
 
-.sidebarApp-container .sidebar-btn-compose,
-.sidebarApp-container .sidebar-btn-compose:active {
-    box-shadow: 0 1px 2px 0 rgba(60,64,67,0.302),0 1px 3px 1px rgba(60,64,67,0.149);
-    -moz-osx-font-smoothing: grayscale;
-    font-family: 'Google Sans', Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
-    font-size: .875rem;
-    letter-spacing: .25px;
-    text-items: center;
-    background-color: #fff;
-    background-image: url(https://i.imgur.com/ieojGGR.png) !important;
-    background-position: left;
-    background-position-y: 6 !important;
-    background-position-x: 8px !important;
-    background-repeat: no-repeat;
-    -moz-border-radius: 24px;
-    border-radius: 24px;
-    color: #3c4043;
-    display: inline;
-    font-weight: 800;
-    height: 48px;
-    min-width: 56px;
-    overflow: hidden;
-    padding-left: 19px;
-    text-transform: none;
-    border-color: none;
-}
 
-.sidebarApp-container .sidebar-btn-compose:hover,
-.sidebarApp-container .sidebar-btn-compose:focus {
-    background-color: transparent !important;
-    color: #3c4043 !important; }
 
 .sidebarApp-container .sidebar-btn-back {
     border: 1px solid hsla(0,0%,100%,.6);
@@ -286,9 +303,6 @@ body section.sidebar ul.menu li.active a {
 }
 
 
-/*Protonmail Logo*/
-.headerSecuredDesktop-logo {
-    background-color: #FFF;}
 
 body section.sidebar {
     background: #FFF;
@@ -323,12 +337,6 @@ body section.sidebar ul.menu li.active a i.fa {
     color: #d93025;
     opacity: 0.5;
 }
-
-/*body section.sidebar ul.menu li a i.fa:hover {
-background: #d93025;
-color:#202124
-opacity: 1; }*/
-
 body section.sidebar ul.menu li a .fa-repeat {
     color: #757575;
     opacity: 1; }
@@ -864,10 +872,7 @@ body #conversation-list-rows .conversation .size {
     color: #202124;
 }
 
-.tooltip {
-    font-size: 10px;
-    height: 28px;
-}
+
 
 .navigation-upgrade-item {
     visibility: hidden;
