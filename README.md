@@ -6,7 +6,7 @@ Themes for Protonmail.com - Thoughtfully created.
 ##ProtonMail Beta 4 Gmail Theme (Preview)
 
 
-![gmail4.0](https://imgur.com/gallery/CHXXoS6.png)
+![gmail4.0](https://i.imgur.com/PwEsiDj.png)
 
 
 ## GMail Theme
