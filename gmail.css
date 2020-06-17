@@ -31,11 +31,10 @@ NOTE: If there are any issues please open a ticket.
     font-family: 'Google Sans', Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
     font-size: .875rem;
     letter-spacing: .25px;
-    text-items: center;
     background-color: #fff;
     background-image: url(https://i.imgur.com/ieojGGR.png) !important;
     background-position: left;
-    background-position-y: 6 !important;
+    /*background-position-y: 6 !important;*/
     background-position-x: 8px !important;
     background-repeat: no-repeat;
     -moz-border-radius: 24px;
@@ -49,11 +48,14 @@ NOTE: If there are any issues please open a ticket.
     padding-left: 19px;
     text-transform: none;
     border-color: none;
+    transition: box-shadow .08s linear, min-width .15s cubic-bezier(0.4,0.0,0.2,1);
 }
 .sidebarApp-container .sidebar-btn-compose:hover,
 .sidebarApp-container .sidebar-btn-compose:focus {
     background-color: transparent !important;
-    color: #3c4043 !important; }
+    color: #3c4043 !important;
+    box-shadow: 0 1px 3px 0 rgba(60,64,67,0.302),0 4px 8px 3px rgba(60,64,67,0.149);
+}
 
 
 
@@ -300,6 +302,7 @@ body section.sidebar ul.menu li.active a,
 body section.sidebar ul.menu li.active a {
     color: #202124;
     background: #fce8e6;
+    border-radius: 0 16px 16px 0;
 }
 
 
@@ -314,16 +317,20 @@ body section.sidebar a.compose {
     color: #202124; }
 
 body section.sidebar a.compose:hover {
-    background: #202124;;
+    background: #202124;
     border-color: #202124;
-    color: #d93025; }
+    color: #d93025;
+    border-radius: 0 16px 16px 0;
+}
 
 body section.sidebar ul.menu li a {
     color: #202124; }
 
 body section.sidebar ul.menu li a:hover {
     background: #fce8e6;
-    color: #202124 }
+    color: #202124;
+    border-radius: 0 16px 16px 0;
+}
 
 body section.sidebar ul.menu li.active a,
 body section.sidebar ul.menu li.active a { 
