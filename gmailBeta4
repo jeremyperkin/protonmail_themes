@@ -336,3 +336,7 @@ NOTE: If there are any issues please open a ticket.
         background-color: #fce8e6;
         border-color: #d93025;
     }
+    .dropDown-logout-button:focus .expand-caret, 
+    .dropDown-logout-button:hover .expand-caret, 
+    .dropDown-logout-button[aria-expanded=true] .expand-caret {
+    display:none}
