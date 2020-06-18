@@ -9,7 +9,7 @@ Themes for Protonmail.com - Thoughtfully created.
 ![gmail4.0](https://i.imgur.com/WPjEYWv.png)
 
 
-## GMail Theme **NON PROTONMAIL BETA 4**
+## GMail Theme (**NON PROTONMAIL BETA 4**)
 
 ![gmailv3](https://i.imgur.com/wo3bE4W.png)
 
