@@ -3,13 +3,13 @@ Themes for Protonmail.com - Thoughtfully created.
 
 [![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://paypal.me/yawnzz?locale.x=en_US)
 
-## ProtonMail Beta 4 Gmail Theme (Preview [almost fully baked]) Updated Screenshot.
+## ProtonMail Beta 4 Gmail Theme.
 
 
-![gmail4.0](https://i.imgur.com/9hYZFoC.png)
+![gmail4.0](https://i.imgur.com/WPjEYWv.png)
 
 
-## GMail Theme
+## GMail Theme **NON PROTONMAIL BETA 4**
 
 ![gmailv3](https://i.imgur.com/wo3bE4W.png)
 
