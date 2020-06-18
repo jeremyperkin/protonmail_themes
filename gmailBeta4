@@ -1,0 +1,292 @@
+/*GMAIL THEME for ProtonMail Theme*/
+
+:root{
+    --main-bg-color: #FFF;
+    --secondary-bg-color: #FFF;
+    --bgcolor-toolbar: #FFF;
+    --bgcolor-aside-link:#757575;
+    --bgcolor-subnav: #FFF;
+    --bgcolor-input: #f1f3f4 !important;
+    --bgcolor-spacebar: transparent;
+    --bgcolor-item-column-list: #FFF;
+    --bgcolor-unread-item-column-list: #fce8e6;
+    --color-nav-active: #d93025;
+    --bgcolor-subnav: #FFF;
+    --bgcolor-main-area: #FFF;
+    --bgcolor-subnav: #FFF;
+    --color-standard-text: #202124;
+    --fillcolor-logo: #d93025;
+    --fillcolor-icons: #757575;
+    --color-nav-link: #202124;
+    --color-nav-active: #d93025; }
+    
+    .toolbar-separator {
+       display: none;
+    }
+    
+    .sidebar .pm-button--large,
+    .sidebar .pm-button--large:active {
+       box-shadow: 0 1px 2px 0 rgba(60,64,67,0.302),0 1px 3px 1px rgba(60,64,67,0.149);
+        -moz-osx-font-smoothing: grayscale;
+        font-family: 'Google Sans', Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+        letter-spacing: .25px;
+        background-color: #fff !important;
+        background-image: url(https://i.imgur.com/ieojGGR.png) !important;
+        background-position: left;
+        background-position-x: 8px !important;
+        background-repeat: no-repeat;
+        -moz-border-radius: 24px;
+        border-radius: 24px;
+        color: #3c4043 !important;
+        display: inline;
+        font-weight: 600;
+        height: 48px;
+        min-width: 36px;
+        overflow: hidden;
+        padding-left: 19px;
+        text-transform: none;
+        border-color: transparent;
+        transition: box-shadow .08s linear, min-width .15s cubic-bezier(0.4,0.0,0.2,1);
+    }
+    
+    .sidebar .pm-button--large:hover {
+        box-shadow: 0 1px 3px 0 rgba(60,64,67,0.302),0 4px 8px 3px rgba(60,64,67,0.149);
+        background: #f1f3f4;
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: margin .15s cubic-bezier(0.4,0.0,0.2,1),padding .15s cubic-bezier(0.4,0.0,0.2,1)
+    }
+    .sidebar .navigation {
+        padding-left: 20px;}
+    
+    
+    [aria-current="page"].navigation__link {
+        color: var(--color-nav-active, #202124);
+        font-weight: 700;
+        background: #fce8e6;
+        border-radius: 0 16px 16px 0;
+    }
+    
+    .navigation__link:hover {
+        color: #202124;
+        fill: #d93025;
+        background: #fce8e6;
+        border-radius: 0 16px 16px 0;
+    }
+    .searchbox-field[type="search"] {
+        height: 4rem;
+        background-color: var(--bgcolor-searchbox-field, #FFF);
+        background-image: none;
+        border-color: var(--main-bg-color,#000);
+        background-size: 2rem;
+        padding-left: calc(2em + 2rem);
+        padding-right: 4rem;
+        color: var(--color-standard-text,#202124);
+        border-width: 0;
+    }
+      .focus.pm-field-icon-container,
+      .pm-field-icon-container:focus, 
+      .pm-field-icon-container:focus-within, 
+      .pm-field.focus, 
+      .pm-field:focus, 
+      .pm-field:focus-within {
+        background-color: var(--bgcolor-main-area,#fff);
+        box-shadow: 2px 2px 4px 5px #ccc;
+    }
+    
+    .searchbox-search-button > .searchbox-search-button-icon {
+        width: 2.2rem;
+        height: 2.2rem;
+        fill: var(--fillcolor-icons,#202124);
+    }
+    .dropDown-logout-initials {
+        border-color: var(--color-nav-link,#42414d);
+        min-width: 4em;
+        min-height: 4em;
+        background-image: url(https://i.imgur.com/YPfewWT.jpg); /*CHANGE THIS FILE TO ANYTHING YOU WANT FOR YOUR DISPLAY IMAGE*/
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .dropDown-logout-text {
+        display: none;
+    }
+    
+    
+    .main {
+        border-radius: 4px 4px 0 0;
+        margin-right: 0px;
+        z-index: 1;
+        box-shadow: var(--boxshadow-main,none);
+        border-radius: 0 16px 16px 0;
+        padding-left: 8px;
+    }
+    .pm-select-all .pm-checkbox-fakecheck, .pm-select-all .pm-radio-fakeradio {
+        border: 1px solid #585c67;
+        background-color: #FFF;
+    }
+    
+    .selectBoxElement-container{ /* puts the Star icon on column 2 */
+    order: -2;
+    margin-right: 0.5em;
+    }
+    .item-container-row div:nth-of-type(3){
+    order:-1;
+    margin-right: 10px;
+    }
+    .tooltip {
+        display: none;
+    }
+    
+    .protonLoader
+    {
+        background: transparent !important;
+        border-color: hsla(3.7,70.9%,49.8%,0.6) !important;
+        box-shadow: 0 2px 3px 0 rgba(0,0,0,.2) !important;
+    }
+    .protonLoader::after
+    {
+        border: 5px solid hsla(210,27.3%,95.7%,0.3) !important;
+        border-top-color: hsla(3.7,70.9%,49.8%,0.3)!important;
+    }
+    .protonLoaderIcon > svg > g:nth-child(1) > path
+    {
+        fill: #d93025 !important;
+    }
+    
+    #pm_composer .composer .composerHeader-container {
+        background: #202124;
+        color: #fff;
+    }
+    .composerInputMeta-label:hover {
+        color: #afafba;
+    }
+    
+    .composer-btn-send,
+    .btnSendMessage-btn-action {
+        background: #FFF;
+        color: #202124;
+        border-color: #202124;
+    }
+    
+    .composer-btn-send:hover,
+    .composer-btn-send:focus,
+    .btnSendMessage-btn-action:hover
+    .btnSendMessage-btn-action:focus {
+        background: #d93025;
+        color: #f1f3f4;
+        border-color: #d93025;
+    }
+    
+    .conversation.marked::before {
+        background-color: #d93025;
+    }
+    .item-container, .item-container-row {
+        border-bottom: 1px solid transparent;
+    }
+    
+    .appsDropdown-button {    
+        color: #afafba;
+    }
+    .appsDropdown-button:hover {    
+        color: #d93205;
+    }
+    
+    .pm-select-all .pm-checkbox-fakecheck, .pm-select-all .pm-radio-fakeradio {
+        border: 1px solid #585c67;
+        background-color: #FFF;
+    }
+    .pm-select-all .pm-checkbox-fakecheck:hover, .pm-select-all .pm-radio-fakeradio:hover {
+        border: 1px solid #d93025;
+        background-color: #FFF;
+    }
+    
+    .icon-16p:hover {
+        color: #d93025;
+    }
+    .navigationUser-logout {
+        color: #202124;
+        background-color: #fce8e6;
+        border: 1px solid #fce8e6;
+    }
+    .navigationUser-logout:hover {
+        color: #FFF;
+        background: #d93025;
+        border: 1px solid #d93025;
+    }
+    
+    .notification-alert {
+        background: #ec5858;
+        color:#f6f7fa
+    }
+    
+    .notification-success {
+        background: #d93025;
+        color:#f1f3f4;
+    }
+    
+    .notification-warning {
+        background: #f1f3f4;
+        color:#d93025;
+    }
+    
+    .notification-info {
+        background: #fce8e6;
+        color:#202124;
+    }
+    
+    .dropDown-item:hover {
+        background-color: var(--bgcolor-input,#fce8e6);
+    }
+    
+    .btnAdvancedSearch-icon-desktop {
+        fill: #d93025;
+    }
+    .btnAdvancedSearch-icon-desktop {
+        fill: #d93025;
+    }
+    .searchbox-advanced-search-button:hover {
+        background: #fce8e6;
+    }
+    
+    
+    .pm-modalFooter [class*="pm-button"] {
+        min-height: 3.4rem;
+        background: #fce8e6;
+        color: #202124;
+        border-color: #fce8e6;
+    
+    }
+    .pm-modalFooter [class*="pm-button"]:hover {
+        min-height: 3.4rem;
+        background: #d93025;
+        color: #F1f3f4;
+        border-color: #d93025;}
+    
+    .searchForm-advanced-submit {
+        background: #FFF;
+        color: #202124;
+        border: 1px solid #afafba;
+    }
+    .searchForm-advanced-submit:hover {
+        background: #d93025;
+        color: #f1f3f4;
+        border: 1px solid #d93025 }
+    
+    .protonmail .text-purple {
+        color: #fce8e6!important;
+    }
+    
+    .searchForm-keywords {
+        background: #FFF; }
+    
+    .pm-radio:checked + .pm-radio-fakeradio::before {
+        background: #fce8e6;
+        transform: scale(1);
+    }
+    
+    .searchbox-container {
+        width: 25%;
+        padding-left: 7px;
+    }
+    .navigation-upgrade-item {display:none}
