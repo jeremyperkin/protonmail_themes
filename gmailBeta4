@@ -296,3 +296,27 @@ NOTE: If there are any issues please open a ticket.
         padding-left: 7px;
     }
     .navigation-upgrade-item {display:none}
+    
+    /*APP BOX*/
+    .appsDropdown-container a,
+    .appsDropdown-container.dropDown a {
+        color: #202124;
+        background: #FFF;
+    }
+    .appsDropdown-container a:focus,
+    .appsDropdown-container a:hover,
+    .appsDropdown-container.dropDown a:hover,
+    .appsDropdown-container.dropDown a:focus {
+        color: #202124;
+        background: #fce8e6; }
+
+    .appsDropdown-container svg,
+    .appsDropdown-container.dropDown svg {fill: #d93025}
+
+    .appsDropdown-container::before {
+        --bgcolor-main-area: #F1f3f4;
+    }
+    .appsDropdown-container.dropDown .dropDown:before,
+    .appsDropdown-container.dropDown .dropDown-content:before {
+        background-color: #F1F3F4;
+    }
