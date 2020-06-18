@@ -317,6 +317,22 @@ NOTE: If there are any issues please open a ticket.
         --bgcolor-main-area: #F1f3f4;
     }
     .appsDropdown-container.dropDown .dropDown:before,
-    .appsDropdown-container.dropDown .dropDown-content:before {
-        background-color: #F1F3F4;
+    .appsDropdown-container.dropDown .dropDown-content:before,
+    .appsDropdown-container.dropDown:before {
+        background-color: #F1F3F4; }
+    
+    .icon-16p.color-primary {
+        fill: #fce8e6;
+    }
+    .pm-toggle-checkbox:checked + .pm-toggle-label::before {
+        background: #d93025;
+        transform: translateX(2.75em) translateX(-2px);
+        border-color: #d93025;
+    }
+    .bg-primary {
+        background-color: #15141a;
+    }
+    .item-checkbox:checked + .item-icon {
+        background-color: #fce8e6;
+        border-color: #d93025;
     }
