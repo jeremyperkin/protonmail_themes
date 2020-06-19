@@ -9,6 +9,12 @@ Themes for Protonmail.com - Thoughtfully created.
 ![gmail4.0](https://i.imgur.com/WPjEYWv.png)
 
 
+**Added Features** 
+  Ability to add user display image.
+
+  More to follow..
+
+
 ## GMail Theme (**NON PROTONMAIL BETA 4**)
 
 ![gmailv3](https://i.imgur.com/wo3bE4W.png)
