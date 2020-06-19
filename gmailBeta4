@@ -336,6 +336,9 @@ NOTE: If there are any issues please open a ticket.
         background-color: #fce8e6;
         border-color: #d93025;
     }
+    .item-checkbox + .item-icon:hover .item-icon-fakecheck-icon {
+        fill: #657ee4;
+    }
     .dropDown-logout-button:focus .expand-caret, 
     .dropDown-logout-button:hover .expand-caret, 
     .dropDown-logout-button[aria-expanded=true] .expand-caret {
