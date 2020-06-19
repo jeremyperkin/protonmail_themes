@@ -9,7 +9,7 @@ Themes for Protonmail.com - Thoughtfully created.
 ![gmail4.0](https://i.imgur.com/WPjEYWv.png)
 
 
-**Added Features** 
+**Added Features**  
   Ability to add user display image.
 
   More to follow..
