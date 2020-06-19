@@ -332,11 +332,19 @@ NOTE: If there are any issues please open a ticket.
     .bg-primary {
         background-color: #15141a;
     }
-    .item-checkbox:checked + .item-icon {
-        background-color: #fce8e6;
-        border-color: #d93025;
+    .item-checkbox:checked + .item-icon,
+    .item-checkbox:checked+.item-icon {
+        background-color: #fce8e6 !important;
+        border-color: #d93025 !important;
     }
-    .item-checkbox + .item-icon:hover .item-icon-fakecheck-icon {
+    .item-checkbox + .item-icon:hover > .item-icon-fakecheck {
+        display: flex;
+        transform: scale(1);
+    }
+    .item-checkbox + .item-icon:hover .item-icon-fakecheck-icon,
+    .item-checkbox+.item-icon:hover .item-icon-fakecheck-icon,
+    .selectBoxElement-container:hover .item-icon .item-icon-fakecheck-icon
+    {
         fill: #d93025;
     }
     .dropDown-logout-button:focus .expand-caret, 
