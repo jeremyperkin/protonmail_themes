@@ -375,3 +375,53 @@ NOTE: If there are any issues please open a ticket.
     .dropDown-item:hover {
         background-color: #fce8e6;
     }
+
+    .subscriptionTable-plan[data-current-plan="true"] {
+    border-left: 2px solid #fce8e6;
+    border-right: 2px solid #fce8e6;
+    border-bottom: 2px solid #fce8e6;
+    background-color: #FFF;
+    background-color: var(--bgcolor-input,#fFF);
+}
+.bordered-container{
+    border: 1px solid #afafba;
+    border: 1px solid var(--bordercolor-input #f1F4F5);
+}
+.subscriptionTable-currentPlan-container {
+    background-color: #d93025;
+}
+
+.pm-button--primary,
+.pm-button.pm-button--primary {
+    background: #fce8e6;
+    color: #202124; border: 1px #fce8e6}
+
+.pm-button--primary:hover,
+.pm-button.pm-button--primary:hover {
+    background: #d93025;
+    color: #F1F3F4;
+    border: 1px #D93025}
+
+.container-section-sticky-section > .pm-button--link, .pm-button--link.pm-button--info, .pm-button--link.pm-button--redborder, .pm-button.pm-button--link {
+    color: #fce8e6
+}
+.settings-grid-container a {
+    color: #fce8e6
+}
+
+.block-info-standard {
+	border-color: #fce8e6;
+}
+.block-info-standard-warning {
+	border-color: #d93025;
+}
+.increase-surface-click { 
+    color: #202124;
+    background : #fce8e6; 
+    border: 1px solid #fce8e6
+}
+.increase-surface-click:hover { 
+    color: #FFF;
+    background: #d93025; 
+    border: 1px solid #d93025  
+}
