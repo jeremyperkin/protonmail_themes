@@ -210,16 +210,20 @@ NOTE: If there are any issues please open a ticket.
     .icon-16p:hover {
         color: #d93025;
     }
-    .navigationUser-logout {
+   .navigationUser-logout {
         color: #202124;
         background-color: #fce8e6;
         border: 1px solid #fce8e6;
     }
-    .navigationUser-logout:hover {
+   .navigationUser-logout:hover {
         color: #FFF;
         background: #d93025;
         border: 1px solid #d93025;
     }
+.dropDown-item-link.nodecoration.pl1.pr1.pt0-5.pb0-5:hover {
+background: #fce9e6; color: #202124}
+   .dropDown-item.pt0-5.pb0-5.pl1.pr1.flex
+    { background: #FFF}
     
     .notification-alert {
         background: #ec5858;
@@ -366,7 +370,9 @@ NOTE: If there are any issues please open a ticket.
 
     .dropdown-label-create:hover,
     .dropdown-folder-create-button:hover,
-    .dropdown-label-apply:hover {
+    .dropdown-label-apply:hover,
+    .dropdown-label-create:not(div):active,
+    .dropdown-folder-create-button:not(div):active  {
         background: #d93025;
         border: 1px solid #d93025;
         color: #F1F3F4
@@ -376,16 +382,12 @@ NOTE: If there are any issues please open a ticket.
         background-color: #fce8e6;
     }
 
-    .subscriptionTable-plan[data-current-plan="true"] {
+.subscriptionTable-plan[data-current-plan="true"] {
     border-left: 2px solid #fce8e6;
     border-right: 2px solid #fce8e6;
     border-bottom: 2px solid #fce8e6;
     background-color: #FFF;
     background-color: var(--bgcolor-input,#fFF);
-}
-.bordered-container{
-    border: 1px solid #afafba;
-    border: 1px solid var(--bordercolor-input #f1F4F5);
 }
 .subscriptionTable-currentPlan-container {
     background-color: #d93025;
@@ -403,10 +405,10 @@ NOTE: If there are any issues please open a ticket.
     border: 1px #D93025}
 
 .container-section-sticky-section > .pm-button--link, .pm-button--link.pm-button--info, .pm-button--link.pm-button--redborder, .pm-button.pm-button--link {
-    color: #fce8e6
+    color: #e3aaa1
 }
 .settings-grid-container a {
-    color: #fce8e6
+    color: #e3aaa1
 }
 
 .block-info-standard {
@@ -415,4 +417,13 @@ NOTE: If there are any issues please open a ticket.
 .block-info-standard-warning {
 	border-color: #d93025;
 }
-
+.pm-button.increase-surface-click {
+    background: #fce8e6;
+    color: #202124;
+}
+.pm-button.increase-surface-click:hover {
+    background: #d93025;
+    color: #FFF;
+}
+.bordered-container{
+    border: 1px solid #f1f4f5;}
