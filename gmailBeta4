@@ -127,18 +127,14 @@ NOTE: If there are any issues please open a ticket.
         border-radius: 0 16px 16px 0;
         padding-left: 8px;
     }
-    .pm-select-all .pm-checkbox-fakecheck, .pm-select-all .pm-radio-fakeradio {
-        border: 1px solid #585c67;
-        background-color: #FFF;
-    }
-    
+  
     .selectBoxElement-container{ /* puts the Star icon on column 2 */
-    order: -2;
-    margin-right: 0.5em;
+        order: -2;
+        margin-right: 0.5em;
     }
     .item-container-row div:nth-of-type(3){
-    order:-1;
-    margin-right: 10px;
+        order:-1;
+        margin-right: 10px;
     }
     .tooltip {
         display: none;
@@ -197,12 +193,16 @@ NOTE: If there are any issues please open a ticket.
     .appsDropdown-button:hover {    
         color: #d93205;
     }
-    
-    .pm-select-all .pm-checkbox-fakecheck, .pm-select-all .pm-radio-fakeradio {
+         
+    .pm-checkbox-fakecheck,
+    .pm-select-all .pm-checkbox-fakecheck,   
+    .pm-select-all .pm-radio-fakeradio {
         border: 1px solid #585c67;
         background-color: #FFF;
     }
-    .pm-select-all .pm-checkbox-fakecheck:hover, .pm-select-all .pm-radio-fakeradio:hover {
+
+    .pm-select-all .pm-checkbox-fakecheck:hover,
+    .pm-select-all .pm-radio-fakeradio:hover {
         border: 1px solid #d93025;
         background-color: #FFF;
     }
@@ -332,6 +332,7 @@ NOTE: If there are any issues please open a ticket.
     .bg-primary {
         background-color: #15141a;
     }
+   
     .item-checkbox:checked + .item-icon,
     .item-checkbox:checked+.item-icon {
         background-color: #fce8e6 !important;
@@ -341,6 +342,7 @@ NOTE: If there are any issues please open a ticket.
         display: flex;
         transform: scale(1);
     }
+
     .item-checkbox + .item-icon:hover .item-icon-fakecheck-icon,
     .item-checkbox+.item-icon:hover .item-icon-fakecheck-icon,
     .selectBoxElement-container:hover .item-icon .item-icon-fakecheck-icon
@@ -350,4 +352,26 @@ NOTE: If there are any issues please open a ticket.
     .dropDown-logout-button:focus .expand-caret, 
     .dropDown-logout-button:hover .expand-caret, 
     .dropDown-logout-button[aria-expanded=true] .expand-caret {
-    display:none}
+        display:none
+    }
+
+
+    .dropdown-label-create,
+    .dropdown-folder-create-button,
+    .dropdown-label-apply {
+        background: #fce8e6;
+        border: 1px solid #fce8e6;
+        color: #202124;
+    }
+
+    .dropdown-label-create:hover,
+    .dropdown-folder-create-button:hover,
+    .dropdown-label-apply:hover {
+        background: #d93025;
+        border: 1px solid #d93025;
+        color: #F1F3F4
+    }
+
+    .dropDown-item:hover {
+        background-color: #fce8e6;
+    }
