@@ -220,10 +220,13 @@ NOTE: If there are any issues please open a ticket.
         background: #d93025;
         border: 1px solid #d93025;
     }
-    .dropDown-item-link.nodecoration.pl1.pr1.pt0-5.pb0-5:hover {
+    .dropDown-item.pt0-5.pb0-5.pl1.pr1.flex,
+    .dropDown-item.p1.flex.flex-column,
+    .dropDown-item.p1.flex
+       {background: #FFF}
+    .dropDown-item-link.nodecoration.pl1.pr1.pt0-5.pb0-5:hover,
+    .dropDown-item-link.pl1.pr1.pt0-5.pb0-5.alignleft:hover {
 	background: #fce9e6; color: #202124}
-   .dropDown-item.pt0-5.pb0-5.pl1.pr1.flex
-    	{background: #FFF}
     
     .notification-alert {
         background: #ec5858;
@@ -426,3 +429,14 @@ NOTE: If there are any issues please open a ticket.
     }
     .bordered-container {
     	border: 1px solid #f1f4f5; }
+
+    .toogleModeElementsDropdown-container[data-layout=rows] [data-mode=rows],
+    .sortViewDropdown-container[data-layout=-date] [data-mode=-date],
+    [class*=advancedFilterElement-item].active {
+        background: #d93025;
+        border: 1px solid #d93025;
+        color: #F9F9Fb;
+    }
+    .appsDropdown-item.dropDown-item {
+    	--bordercolor-input: none;
+    }
