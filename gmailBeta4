@@ -6,6 +6,14 @@ NOTE: If there are any issues please open a ticket.
 ***********************************************/
 /*GMAIL THEME for ProtonMail Theme*/
 
+/***********************************************
+created by: jeremyperkin                  
+github: https://github.com/jeremyperkin/protonmail_themes/gmailBeta4.css
+reddit: yawn_zz
+NOTE: If there are any issues please open a ticket.
+***********************************************/
+/*GMAIL THEME for ProtonMail Theme*/
+
 :root{
     --main-bg-color: #FFF;
     --secondary-bg-color: #FFF;
@@ -63,22 +71,21 @@ NOTE: If there are any issues please open a ticket.
         transition: margin .15s cubic-bezier(0.4,0.0,0.2,1),padding .15s cubic-bezier(0.4,0.0,0.2,1)
     }
     .sidebar .navigation {
-        padding-left: 20px;}
-    
-    
-    [aria-current="page"].navigation__link {
-        color: var(--color-nav-active, #202124);
-        font-weight: 700;
-        background: #fce8e6;
-        border-radius: 0 16px 16px 0;
+        padding-left: 20px;
     }
+
     
-    .navigation__link:hover {
+    [aria-current="page"].navigation__link,
+    [aria-current="page"].navigation__link:hover,
+    .navigation__link:hover  {
         color: #202124;
         fill: #d93025;
         background: #fce8e6;
         border-radius: 0 16px 16px 0;
     }
+    .navigation__item:hover svg {fill: #d93025}
+
+
     .searchbox-field[type="search"] {
         height: 4rem;
         background-color: var(--bgcolor-searchbox-field, #FFF);
@@ -161,20 +168,23 @@ NOTE: If there are any issues please open a ticket.
         color: #fff;
     }
     .composerInputMeta-label:hover {
-        color: #afafba;
+        color: #fce9e6;
     }
     
     .composer-btn-send,
-    .btnSendMessage-btn-action {
-        background: #FFF;
+    .btnSendMessage-btn-action, 
+    .btnSendMessage-btn-action:not(div):active {
+        background: #FCE8E6;
         color: #202124;
-        border-color: #202124;
+        border-color: #FCE8E6;
     }
     
     .composer-btn-send:hover,
     .composer-btn-send:focus,
+    .composer-btn-send:not(div):active,
     .btnSendMessage-btn-action:hover
-    .btnSendMessage-btn-action:focus {
+    .btnSendMessage-btn-action:focus,
+    .btnSendMessage-btn-action:not(div):active {
         background: #d93025;
         color: #f1f3f4;
         border-color: #d93025;
@@ -207,9 +217,6 @@ NOTE: If there are any issues please open a ticket.
         background-color: #FFF;
     }
     
-    .icon-16p:hover {
-        color: #d93025;
-    }
    .navigationUser-logout {
         color: #202124;
         background-color: #fce8e6;
@@ -408,12 +415,15 @@ NOTE: If there are any issues please open a ticket.
     	border: 1px #D93025
     }
     .container-section-sticky-section > .pm-button--link, .pm-button--link.pm-button--info, .pm-button--link.pm-button--redborder, .pm-button.pm-button--link {
-    color: #e3aaa1 }
+    color: #e3aaa1 
+    }
     .settings-grid-container a
     {
     	color: #e3aaa1
     }
-    .block-info-standard {
+
+    .block-info-standard,
+    .block-info {
 	border-color: #fce8e6;
     }
     .block-info-standard-warning {
@@ -421,10 +431,12 @@ NOTE: If there are any issues please open a ticket.
     }
     .pm-button.increase-surface-click {
     	background: #fce8e6;
+        border: 1px solid #fce8e6;
     	color: #202124;
     }
     .pm-button.increase-surface-click:hover {
     	background: #d93025;
+        border: 1px solid #D93025;
     	color: #FFF;
     }
     .bordered-container {
@@ -438,5 +450,38 @@ NOTE: If there are any issues please open a ticket.
         color: #F9F9Fb;
     }
     .appsDropdown-item.dropDown-item {
-    	--bordercolor-input: none;
+    --bordercolor-input: none;
+    }
+
+    .toggleDetails-label-show,
+    .toggleDetails,
+    .unsubscribePanel-button,
+    .displayContentBtn-button { color: #e3aaa1 }
+
+    .filterButton-btn-next {
+        background: #fce8e6;
+        color: #202124;
+        border: 1px solid #fce8e6; }
+
+    .filterButton-btn-next:hover {
+        background: #D93025;
+        color: #F9F9FB;
+        border: 1px solid #D93025; }
+
+    .toolbar-icon:hover,
+    .toolbar-button:hover svg
+        { fill: #d93025}
+
+    [class*=squireToolbar-action-]:hover svg {fill: #d93025}
+
+    .composerHeader-btn:hover svg {color: #d93025}
+
+    .composer-btn-attachment:hover,
+    .composer-btn-expiration:hover,
+    .composer-btn-encryption:hover,
+    .composer-btn-discard:hover,
+    .composer-btn-save:hover  {color: #d93025}
+
+    .composerInputMeta-label {   
+        color: #d93025;
     }
