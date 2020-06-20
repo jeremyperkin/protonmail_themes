@@ -125,7 +125,7 @@ NOTE: If there are any issues please open a ticket.
         z-index: 1;
         box-shadow: var(--boxshadow-main,none);
         border-radius: 0 16px 16px 0;
-        padding-left: 8px;
+        padding-left: 48px;
     }
   
     .selectBoxElement-container{ /* puts the Star icon on column 2 */
