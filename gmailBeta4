@@ -415,13 +415,4 @@ NOTE: If there are any issues please open a ticket.
 .block-info-standard-warning {
 	border-color: #d93025;
 }
-.increase-surface-click { 
-    color: #202124;
-    background : #fce8e6; 
-    border: 1px solid #fce8e6
-}
-.increase-surface-click:hover { 
-    color: #FFF;
-    background: #d93025; 
-    border: 1px solid #d93025  
-}
+
