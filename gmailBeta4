@@ -307,7 +307,7 @@ NOTE: If there are any issues please open a ticket.
     
     .searchbox-container {
         width: 25%;
-        padding-left: 7px;
+        padding-left: 43px;
     }
     .navigation-upgrade-item {display:none}
     
