@@ -6,14 +6,6 @@ NOTE: If there are any issues please open a ticket.
 ***********************************************/
 /*GMAIL THEME for ProtonMail Theme*/
 
-/***********************************************
-created by: jeremyperkin                  
-github: https://github.com/jeremyperkin/protonmail_themes/gmailBeta4.css
-reddit: yawn_zz
-NOTE: If there are any issues please open a ticket.
-***********************************************/
-/*GMAIL THEME for ProtonMail Theme*/
-
 :root{
     --main-bg-color: #FFF;
     --secondary-bg-color: #FFF;
@@ -88,23 +80,25 @@ NOTE: If there are any issues please open a ticket.
 
     .searchbox-field[type="search"] {
         height: 4rem;
-        background-color: var(--bgcolor-searchbox-field, #FFF);
+        background-color: var(--bgcolor-searchbox-field, #F1F3F4);
         background-image: none;
-        border-color: var(--main-bg-color,#000);
+        /*border-color: var(--main-bg-color,#000);*/
+    	border: 1px solid transparent;
         background-size: 2rem;
         padding-left: calc(2em + 2rem);
         padding-right: 4rem;
         color: var(--color-standard-text,#202124);
+    	border-radius: 8px;
         border-width: 0;
     }
-      .focus.pm-field-icon-container,
-      .pm-field-icon-container:focus, 
-      .pm-field-icon-container:focus-within, 
-      .pm-field.focus, 
-      .pm-field:focus, 
-      .pm-field:focus-within {
-        background-color: var(--bgcolor-main-area,#fff);
-        box-shadow: 2px 2px 4px 5px #ccc;
+    .focus.pm-field-icon-container,
+    .pm-field-icon-container:focus, 
+    .pm-field-icon-container:focus-within, 
+    .pm-field.focus, 
+    .pm-field:focus, 
+    .pm-field:focus-within {
+       	background-color: rgba(255,255,255,1);
+       	box-shadow: 0 1px 1px 0 rgba(65,69,73,0.3),0 1px 3px 1px rgba(65,69,73,0.15);
     }
     
     .searchbox-search-button > .searchbox-search-button-icon {
@@ -420,6 +414,10 @@ NOTE: If there are any issues please open a ticket.
     .settings-grid-container a
     {
     	color: #e3aaa1
+    }
+    .settings-grid-container a:hover
+    {
+    	color: #D93025
     }
 
     .block-info-standard,
