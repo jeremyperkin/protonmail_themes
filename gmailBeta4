@@ -510,3 +510,6 @@ NOTE: If there are any issues please open a ticket.
     .minicalendar-day[aria-current="date"][aria-pressed="true"]::before {
     background: #d93025;
     }
+    .pm-modalFooter .pm-button--primary[disabled] {
+    	background-color: #fce8e6;
+    	color: #202124 }
