@@ -65,15 +65,23 @@ NOTE: If there are any issues please open a ticket.
     .sidebar .navigation {
         padding-left: 20px;
     }
-
-    
-    [aria-current="page"].navigation__link,
-    [aria-current="page"].navigation__link:hover,
+    li.navigationItem-container.navigation__item.sidebarApp-item:nth-of-type(1) > .ptDnd-dropzone-container.w100.navigationItem-container.navigation__link:visited,
+    li.navigationItem-container.navigation__item.sidebarApp-item.active:nth-of-type(1) > .ptDnd-dropzone-container.w100.navigationItem-container.navigation__link{
+    	background: #fce8e6;
+	border-radius: 0 16px 16px 0;
+    }
+    li.navigationItem-container.navigation__item.sidebarApp-item.active:nth-of-type(n+2) > .ptDnd-dropzone-container.w100.navigationItem-container.navigation__link,
+    li.navigationItem-container.navigation__item.sidebarApp-item:nth-of-type(n+2) > .ptDnd-dropzone-container.w100.navigationItem-container.navigation__link:visited,
+    li.navigationItem-container.navigation__item.sidebarApp-item:nth-of-type(n+2) > .ptDnd-dropzone-container.w100.navigationItem-container.navigation__link:hover,
+    .navigation__link:active,
     .navigation__link:hover  {
         color: #202124;
         fill: #d93025;
-        background: #fce8e6;
+        background: #f1f3f4;
         border-radius: 0 16px 16px 0;
+    }
+    .navigation__link {
+    	border-radius: 0 16px 16px 0;
     }
     .navigation__item:hover svg {fill: #d93025}
 
