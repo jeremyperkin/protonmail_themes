@@ -39,7 +39,7 @@ NOTE: If there are any issues please open a ticket.
         background-color: #fff !important;
         background-image: url(https://i.imgur.com/ieojGGR.png) !important;
         background-position: left;
-        background-position-x: 8px !important;
+        background-position-x: 18px !important;
         background-repeat: no-repeat;
         -moz-border-radius: 24px;
         border-radius: 24px;
@@ -65,6 +65,7 @@ NOTE: If there are any issues please open a ticket.
     .sidebar .navigation {
         padding-left: 20px;
     }
+    
     li.navigationItem-container.navigation__item.sidebarApp-item:nth-of-type(1) > .ptDnd-dropzone-container.w100.navigationItem-container.navigation__link:visited,
     li.navigationItem-container.navigation__item.sidebarApp-item.active:nth-of-type(1) > .ptDnd-dropzone-container.w100.navigationItem-container.navigation__link{
     	background: #fce8e6;
@@ -80,11 +81,9 @@ NOTE: If there are any issues please open a ticket.
         background: #f1f3f4;
         border-radius: 0 16px 16px 0;
     }
-    .navigation__link {
-    	border-radius: 0 16px 16px 0;
-    }
-    .navigation__item:hover svg {fill: #d93025}
+    .navigation__link {border-radius: 0 16px 16px 0}
 
+    .navigation__item:hover svg {fill: #d93025}
 
     .searchbox-field[type="search"] {
         height: 4rem;
@@ -409,12 +408,18 @@ NOTE: If there are any issues please open a ticket.
     	background: #fce8e6;
     	color: #202124; 
 	border: 1px #fce8e6;
+        background-repeat: no-repeat;
+        background-position: center;
     }
     .pm-button--primary:hover,
-    .pm-button.pm-button--primary:hover {
+    .pm-button.pm-button--primary:hover,
+    .pm-button--primary:not(div):active,
+    .pm-button.pm-button--primary:not(div):active {
     	background: #d93025;
     	color: #F1F3F4;
-    	border: 1px #D93025
+    	border: 1px #D93025;
+        background-repeat: no-repeat;
+        background-position: center;
     }
     .container-section-sticky-section > .pm-button--link, .pm-button--link.pm-button--info, .pm-button--link.pm-button--redborder, .pm-button.pm-button--link {
     color: #e3aaa1 
@@ -490,4 +495,18 @@ NOTE: If there are any issues please open a ticket.
 
     .composerInputMeta-label {   
         color: #d93025;
+    }
+
+	/*CALENDAR*/
+
+    .plan {color: #d93025}
+    
+    .minicalendar {background: #121212; margin-left: 10px;}
+    
+    .calendar-grid-heading[aria-pressed="true"] .calendar-grid-heading-number {
+      color: #f1f3f4;
+      background-color: #d93025;
+    }
+    .minicalendar-day[aria-current="date"][aria-pressed="true"]::before {
+    background: #d93025;
     }
