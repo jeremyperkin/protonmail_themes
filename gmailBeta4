@@ -16,6 +16,7 @@ NOTE: If there are any issues please open a ticket.
     --bgcolor-spacebar: transparent;
     --bgcolor-item-column-list: #FFF;
     --bgcolor-unread-item-column-list: #fce8e6;
+    --bgcolor-view-column-detail: #FFF;
     --color-nav-active: #d93025;
     --bgcolor-subnav: #FFF;
     --bgcolor-main-area: #FFF;
@@ -24,12 +25,34 @@ NOTE: If there are any issues please open a ticket.
     --fillcolor-logo: #d93025;
     --fillcolor-icons: #757575;
     --color-nav-link: #202124;
-    --color-nav-active: #d93025; }
+    --color-nav-active: #d93025;
+    --email-text: #202124; }
     
     .toolbar-separator {
        display: none;
     }
-    
+ @media (prefers-color-scheme: dark) {
+  :root {
+	--main-bg-color: #121212;
+	--secondary-bg-color: #121212;
+	--bgcolor-toolbar: #121212;
+	--bgcolor-aside-link:#f9f9fb;
+	--bgcolor-subnav: #121212;
+	--bgcolor-input: #f1f3f4 !important;
+	--bgcolor-spacebar: transparent;
+	--bgcolor-item-column-list: #121212;
+	--bgcolor-unread-item-column-list: #fce8e6;
+ 	--bgcolor-view-column-detail: #121212;
+	--color-nav-active: #d93025;
+	--bgcolor-subnav: #121212;
+	--bgcolor-main-area: #121212;
+	--color-standard-text: #f9f9fb;
+	--fillcolor-logo: #d93025;
+	--fillcolor-icons: #757575;
+	--color-nav-link: #f9f9fb;
+	--color-nav-active: #d93025;
+	--email-text: #e2e2e2; }
+  }
     .sidebar .pm-button--large,
     .sidebar .pm-button--large:active {
        box-shadow: 0 1px 2px 0 rgba(60,64,67,0.302),0 1px 3px 1px rgba(60,64,67,0.149);
@@ -78,7 +101,7 @@ NOTE: If there are any issues please open a ticket.
     .navigation__link:hover  {
         color: #202124;
         fill: #d93025;
-        background: #f1f3f4;
+        background: #e2e2e2;
         border-radius: 0 16px 16px 0;
     }
     .navigation__link {border-radius: 0 16px 16px 0}
@@ -87,9 +110,8 @@ NOTE: If there are any issues please open a ticket.
 
     .searchbox-field[type="search"] {
         height: 4rem;
-        background-color: var(--bgcolor-searchbox-field, #F1F3F4);
+        background-color: var(--bgcolor-searchbox-field), var(--darkmode-text);
         background-image: none;
-        /*border-color: var(--main-bg-color,#000);*/
     	border: 1px solid transparent;
         background-size: 2rem;
         padding-left: calc(2em + 2rem);
@@ -121,12 +143,25 @@ NOTE: If there are any issues please open a ticket.
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
+        box-shadow: 0 4px 3px 0 rgba(0, 0, 0, 0.2), 0 0 0 3px #19213e, 0 0 0 3px #151b33;
+	transition: box-shadow 0.5s ease-out;
     }
     .dropDown-logout-text {
         display: none;
     }
-    
-    
+    .item-container, .item-container-row {
+    	padding: .60714em .85714em;
+    	border-bottom: 1px solid var(--bordercolor-input,#dde6ec);
+   	 background: var(--bgcolor-item-column-list,#eeeff1);
+    	color: var(--email-text);
+    }
+    #conversation-view header h1 {
+    	color: var(--email-text);
+    }
+
+    .message-container {
+    	color: var(--email-text);
+    }
     .main {
         border-radius: 4px 4px 0 0;
         margin-right: 0px;
@@ -219,7 +254,7 @@ NOTE: If there are any issues please open a ticket.
     }
     
    .navigationUser-logout {
-        color: #202124;
+        color: #202124, var(--darkmode-text);
         background-color: #fce8e6;
         border: 1px solid #fce8e6;
     }
@@ -263,9 +298,6 @@ NOTE: If there are any issues please open a ticket.
     .btnAdvancedSearch-icon-desktop {
         fill: #d93025;
     }
-    .btnAdvancedSearch-icon-desktop {
-        fill: #d93025;
-    }
     .searchbox-advanced-search-button:hover {
         background: #fce8e6;
     }
@@ -286,7 +318,7 @@ NOTE: If there are any issues please open a ticket.
     
     .searchForm-advanced-submit {
         background: #FFF;
-        color: #202124;
+        color: var(--email-text);
         border: 1px solid #afafba;
     }
     .searchForm-advanced-submit:hover {
@@ -299,7 +331,7 @@ NOTE: If there are any issues please open a ticket.
     }
     
     .searchForm-keywords {
-        background: #FFF; }
+        background: #FFF, var(--darkmode-text); }
     
     .pm-radio:checked + .pm-radio-fakeradio::before {
         background: #fce8e6;
@@ -316,7 +348,7 @@ NOTE: If there are any issues please open a ticket.
     .appsDropdown-container a,
     .appsDropdown-container.dropDown a {
         color: #202124;
-        background: #FFF;
+        background: #FFF, var(--email-text);
     }
     .appsDropdown-container a:focus,
     .appsDropdown-container a:hover,
@@ -329,7 +361,7 @@ NOTE: If there are any issues please open a ticket.
     .appsDropdown-container.dropDown svg {fill: #d93025}
 
     .appsDropdown-container::before {
-        --bgcolor-main-area: #F1f3f4;
+        --bgcolor-main-area: #F1f3f4, var(--email-text);
     }
     .appsDropdown-container.dropDown .dropDown:before,
     .appsDropdown-container.dropDown .dropDown-content:before,
@@ -386,7 +418,7 @@ NOTE: If there are any issues please open a ticket.
     .dropdown-folder-create-button:not(div):active  {
         background: #d93025;
         border: 1px solid #d93025;
-        color: #F1F3F4
+        color: var(--email-text); 
     }
 
     .dropDown-item:hover {
@@ -497,7 +529,7 @@ NOTE: If there are any issues please open a ticket.
         color: #d93025;
     }
 
-	/*CALENDAR*/
+	/*CONTACTS AND CALENDAR*/
 
     .plan {color: #d93025}
     
@@ -511,5 +543,5 @@ NOTE: If there are any issues please open a ticket.
     background: #d93025;
     }
     .pm-modalFooter .pm-button--primary[disabled] {
-    	background-color: #fce8e6;
-    	color: #202124 }
+    background-color: #fce8e6;
+    color: #202124 }
