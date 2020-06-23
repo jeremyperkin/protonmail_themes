@@ -19,6 +19,7 @@ NOTE: If there are any issues please open a ticket.
     --bgcolor-view-column-detail: #FFF;
     --color-nav-active: #d93025;
     --bgcolor-subnav: #FFF;
+    --bgcolor-searchbox-field: #fff;
     --bgcolor-main-area: #FFF;
     --bgcolor-subnav: #FFF;
     --color-standard-text: #202124;
@@ -26,32 +27,44 @@ NOTE: If there are any issues please open a ticket.
     --fillcolor-icons: #757575;
     --color-nav-link: #202124;
     --color-nav-active: #d93025;
-    --email-text: #202124; }
+    --email-text: #202124;
+    --message-view-bg: #FFF;
+    --dropdown-text: #202124;
+    --dropdown-text-h: #202124;
+    --color-main-area: #afafba;
+    --color-standard-text: #202124;
+ }
     
     .toolbar-separator {
        display: none;
     }
  @media (prefers-color-scheme: dark) {
   :root {
-	--main-bg-color: #121212;
-	--secondary-bg-color: #121212;
-	--bgcolor-toolbar: #121212;
-	--bgcolor-aside-link:#f9f9fb;
-	--bgcolor-subnav: #121212;
-	--bgcolor-input: #f1f3f4 !important;
-	--bgcolor-spacebar: transparent;
-	--bgcolor-item-column-list: #121212;
-	--bgcolor-unread-item-column-list: #fce8e6;
- 	--bgcolor-view-column-detail: #121212;
-	--color-nav-active: #d93025;
-	--bgcolor-subnav: #121212;
-	--bgcolor-main-area: #121212;
-	--color-standard-text: #f9f9fb;
-	--fillcolor-logo: #d93025;
-	--fillcolor-icons: #757575;
-	--color-nav-link: #f9f9fb;
-	--color-nav-active: #d93025;
-	--email-text: #e2e2e2; }
+    --main-bg-color: #121212;
+    --secondary-bg-color: #121212;
+    --bgcolor-toolbar: #121212;
+    --bgcolor-aside-link:#f9f9fb;
+    --bgcolor-subnav: #121212;
+    --bgcolor-input: #f1f3f4 !important;
+    --bgcolor-spacebar: transparent;
+    --bgcolor-searchbox-field: #9e9e9e;
+    --bgcolor-item-column-list: #121212;
+    --bgcolor-unread-item-column-list: #fce8e6;
+    --bgcolor-view-column-detail: #121212;
+    --color-nav-active: #d93025;
+    --bgcolor-subnav: #121212;
+    --bgcolor-main-area: #121212;
+    --color-standard-text: #f9f9fb;
+    --fillcolor-logo: #d93025;
+    --fillcolor-icons: #757575;
+    --color-nav-link: #f9f9fb;
+    --color-nav-active: #d93025;
+    --email-text: #e2e2e2;
+    --message-view-bg: #c6c6c6;
+    --dropdown-text: #AFAFBA;
+    --dropdown-text-h: #202124;
+    --color-main-area: #afafba;
+    --color-standard-text: #202124; }
   }
     .sidebar .pm-button--large,
     .sidebar .pm-button--large:active {
@@ -92,7 +105,7 @@ NOTE: If there are any issues please open a ticket.
     li.navigationItem-container.navigation__item.sidebarApp-item:nth-of-type(1) > .ptDnd-dropzone-container.w100.navigationItem-container.navigation__link:visited,
     li.navigationItem-container.navigation__item.sidebarApp-item.active:nth-of-type(1) > .ptDnd-dropzone-container.w100.navigationItem-container.navigation__link{
     	background: #fce8e6;
-	border-radius: 0 16px 16px 0;
+	    border-radius: 0 16px 16px 0;
     }
     li.navigationItem-container.navigation__item.sidebarApp-item.active:nth-of-type(n+2) > .ptDnd-dropzone-container.w100.navigationItem-container.navigation__link,
     li.navigationItem-container.navigation__item.sidebarApp-item:nth-of-type(n+2) > .ptDnd-dropzone-container.w100.navigationItem-container.navigation__link:visited,
@@ -110,7 +123,7 @@ NOTE: If there are any issues please open a ticket.
 
     .searchbox-field[type="search"] {
         height: 4rem;
-        background-color: var(--bgcolor-searchbox-field), var(--darkmode-text);
+        background-color: var(--bgcolor-searchbox-field);
         background-image: none;
     	border: 1px solid transparent;
         background-size: 2rem;
@@ -144,23 +157,26 @@ NOTE: If there are any issues please open a ticket.
         background-repeat: no-repeat;
         background-position: center;
         box-shadow: 0 4px 3px 0 rgba(0, 0, 0, 0.2), 0 0 0 3px #19213e, 0 0 0 3px #151b33;
-	transition: box-shadow 0.5s ease-out;
+        transition: box-shadow 0.5s ease-out
     }
     .dropDown-logout-text {
         display: none;
     }
     .item-container, .item-container-row {
-    	padding: .60714em .85714em;
-    	border-bottom: 1px solid var(--bordercolor-input,#dde6ec);
-   	 background: var(--bgcolor-item-column-list,#eeeff1);
-    	color: var(--email-text);
+        padding: .60714em .85714em;
+        border-bottom: 1px solid var(--bordercolor-input,#dde6ec);
+        background: var(--bgcolor-item-column-list,#eeeff1);
+        color: var(--email-text);
     }
     #conversation-view header h1 {
-    	color: var(--email-text);
+        color: var(--email-text);
+    }
+    #conversation-view .message .frame {
+        background: var(--message-view-bg);
     }
 
     .message-container {
-    	color: var(--email-text);
+        color: var(--email-text);
     }
     .main {
         border-radius: 4px 4px 0 0;
@@ -269,7 +285,7 @@ NOTE: If there are any issues please open a ticket.
        {background: #FFF}
     .dropDown-item-link.nodecoration.pl1.pr1.pt0-5.pb0-5:hover,
     .dropDown-item-link.pl1.pr1.pt0-5.pb0-5.alignleft:hover {
-	background: #fce9e6; color: #202124}
+	    background: #fce9e6; color: #202124}
     
     .notification-alert {
         background: #ec5858;
@@ -290,9 +306,12 @@ NOTE: If there are any issues please open a ticket.
         background: #fce8e6;
         color:#202124;
     }
-    
+    .dropDown-contentInner {
+        color: var(--dropdown-text);}
+
     .dropDown-item:hover {
         background-color: var(--bgcolor-input,#fce8e6);
+        color: var(--dropdown-text-h);
     }
     
     .btnAdvancedSearch-icon-desktop {
@@ -331,7 +350,7 @@ NOTE: If there are any issues please open a ticket.
     }
     
     .searchForm-keywords {
-        background: #FFF, var(--darkmode-text); }
+        background: var(--email-text); }
     
     .pm-radio:checked + .pm-radio-fakeradio::before {
         background: #fce8e6;
@@ -424,6 +443,9 @@ NOTE: If there are any issues please open a ticket.
     .dropDown-item:hover {
         background-color: #fce8e6;
     }
+    .dropDown-item {
+    color: var(--email-text);
+}
     
     .subscriptionTable-plan[data-current-plan="true"] {
     	border-left: 2px solid #fce8e6;
@@ -439,7 +461,7 @@ NOTE: If there are any issues please open a ticket.
     .pm-button.pm-button--primary {
     	background: #fce8e6;
     	color: #202124; 
-	border: 1px #fce8e6;
+	    border: 1px #fce8e6;
         background-repeat: no-repeat;
         background-position: center;
     }
@@ -454,7 +476,7 @@ NOTE: If there are any issues please open a ticket.
         background-position: center;
     }
     .container-section-sticky-section > .pm-button--link, .pm-button--link.pm-button--info, .pm-button--link.pm-button--redborder, .pm-button.pm-button--link {
-    color: #e3aaa1 
+        color: #e3aaa1 
     }
     .settings-grid-container a
     {
@@ -467,10 +489,10 @@ NOTE: If there are any issues please open a ticket.
 
     .block-info-standard,
     .block-info {
-	border-color: #fce8e6;
+	    border-color: #fce8e6;
     }
     .block-info-standard-warning {
-	border-color: #d93025;
+	    border-color: #d93025;
     }
     .pm-button.increase-surface-click {
     	background: #fce8e6;
@@ -493,7 +515,7 @@ NOTE: If there are any issues please open a ticket.
         color: #F9F9Fb;
     }
     .appsDropdown-item.dropDown-item {
-    --bordercolor-input: none;
+        --bordercolor-input: none;
     }
 
     .toggleDetails-label-show,
@@ -540,8 +562,8 @@ NOTE: If there are any issues please open a ticket.
       background-color: #d93025;
     }
     .minicalendar-day[aria-current="date"][aria-pressed="true"]::before {
-    background: #d93025;
+        background: #d93025;
     }
     .pm-modalFooter .pm-button--primary[disabled] {
-    background-color: #fce8e6;
-    color: #202124 }
+        background-color: #fce8e6;
+        color: #202124 }
