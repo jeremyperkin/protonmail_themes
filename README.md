@@ -9,7 +9,7 @@ Themes for Protonmail.com - Thoughtfully created.
 Feel free to let me know what you think of the theme.
 
 
-**DARK MODE**  Based on your chosen computer theme.  (tested on macOS 11 beta). 
+**DARK MODE**  Based on your chosen browser theme (dark/light), also works with computer theme.  (tested on macOS 11 beta). 
 
 ![nowwithdarkmode](https://i.imgur.com/ABafRSq.png)
 
