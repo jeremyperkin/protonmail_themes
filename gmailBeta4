@@ -34,7 +34,8 @@ NOTE: If there are any issues please open a ticket.
     --dropdown-text-h: #202124;
     --color-main-area: #afafba;
     --color-standard-text: #202124;
-    --dropDownbg: #FFF:}
+    --dropDownbg: #FFF:
+    --popup-bg: #FFF; }
  }
     
     .toolbar-separator {
@@ -69,7 +70,8 @@ NOTE: If there are any issues please open a ticket.
     --dropdown-text-h: #202124;
     --color-main-area: #afafba;
     --color-standard-text: #202124;
-    --dropDownbg: #15141a;
+    --dropDownbg: #32313c;
+    --popup-bg: #4a4a55;
 
   }
     .sidebar .pm-button--large,
@@ -111,7 +113,7 @@ NOTE: If there are any issues please open a ticket.
     li.navigationItem-container.navigation__item.sidebarApp-item:nth-of-type(1) > .ptDnd-dropzone-container.w100.navigationItem-container.navigation__link:visited,
     li.navigationItem-container.navigation__item.sidebarApp-item.active:nth-of-type(1) > .ptDnd-dropzone-container.w100.navigationItem-container.navigation__link{
     	background: #fce8e6;
-	    border-radius: 0 16px 16px 0;
+	border-radius: 0 16px 16px 0;
     }
     li.navigationItem-container.navigation__item.sidebarApp-item.active:nth-of-type(n+2) > .ptDnd-dropzone-container.w100.navigationItem-container.navigation__link,
     li.navigationItem-container.navigation__item.sidebarApp-item:nth-of-type(n+2) > .ptDnd-dropzone-container.w100.navigationItem-container.navigation__link:visited,
@@ -184,12 +186,12 @@ NOTE: If there are any issues please open a ticket.
         background: var(--message-view-bg);
     }
     .day-icon, .item-icon, .item-icon-compact {
-            width: 1.2rem;
-            height: 1.2rem;
-        }
+    	width: 1.2rem;
+	height: 1.2rem;
+    }
 
-        .rounded50 {
-            border-radius: 0%;
+    .rounded50 {
+    	border-radius: 0%;
         }
 
     .message-container {
@@ -303,7 +305,6 @@ NOTE: If there are any issues please open a ticket.
     .dropDown-item.p1.flex.flex-column,
     .dropDown-item.p1.flex
        {background: var(--dropDownbg); }
-       
     .dropDown-item-link.nodecoration.pl1.pr1.pt0-5.pb0-5:hover,
     .dropDown-item-link.pl1.pr1.pt0-5.pb0-5.alignleft:hover {
     	background: #fce9e6; color: #202124}
@@ -371,7 +372,7 @@ NOTE: If there are any issues please open a ticket.
     }
     
     .searchForm-keywords {
-        background: var(--email-text); }
+        background: var(--popup-bg); }
     
     .pm-radio:checked + .pm-radio-fakeradio::before {
         background: #fce8e6;
@@ -388,7 +389,7 @@ NOTE: If there are any issues please open a ticket.
     .appsDropdown-container a,
     .appsDropdown-container.dropDown a {
         color: #f1f3f4;
-        background: #15141a;
+        background: var(--popup-bg);
     }
     .appsDropdown-container a:focus,
     .appsDropdown-container a:hover,
@@ -467,8 +468,8 @@ NOTE: If there are any issues please open a ticket.
         background-color: #fce8e6;
     }
     .dropDown-item {
-    color: var(--email-text);
-}
+    	color: var(--email-text);
+    }
     
     .subscriptionTable-plan[data-current-plan="true"] {
     	border-left: 2px solid #fce8e6;
@@ -484,7 +485,7 @@ NOTE: If there are any issues please open a ticket.
     .pm-button.pm-button--primary {
     	background: #fce8e6;
     	color: #202124; 
-	    border: 1px #fce8e6;
+	border: 1px #fce8e6;
         background-repeat: no-repeat;
         background-position: center;
     }
@@ -511,7 +512,8 @@ NOTE: If there are any issues please open a ticket.
     {
     	color: #D93025
     }
-
+    .pm-modal { background: var(--popup-bg) }
+    
     .block-info-standard,
     .block-info {
 	    border-color: #fce8e6;
