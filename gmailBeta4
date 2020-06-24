@@ -35,13 +35,13 @@ NOTE: If there are any issues please open a ticket.
     --color-main-area: #afafba;
     --color-standard-text: #202124;
     --dropDownbg: #FFF:
-    --popup-bg: #FFF; }
-
+    --popup-bg: #FFF;
+    --sidebar-text-h: #202124 }
+ }
     
     .toolbar-separator {
        display: none;
     }
-
  @media (prefers-color-scheme: dark) {
   :root {
     --main-bg-color: #121212;
@@ -73,6 +73,7 @@ NOTE: If there are any issues please open a ticket.
     --color-standard-text: #202124;
     --dropDownbg: #32313c;
     --popup-bg: #4a4a55;
+    --sidebar-text-h: #15141a;
 
   }
     .sidebar .pm-button--large,
@@ -117,12 +118,15 @@ NOTE: If there are any issues please open a ticket.
 	border-radius: 0 16px 16px 0;
     }
     li.navigationItem-container.navigation__item.sidebarApp-item.active:nth-of-type(n+2) > .ptDnd-dropzone-container.w100.navigationItem-container.navigation__link,
-    li.navigationItem-container.navigation__item.sidebarApp-item:nth-of-type(n+2) > .ptDnd-dropzone-container.w100.navigationItem-container.navigation__link:visited,
+    li.navigationItem-container.navigation__item.sidebarApp-item:nth-of-type(n+2) > .ptDnd-dropzone-container.w100.navigationItem-container.navigation__link:visited
+     { color: #afafba; }
+     
     li.navigationItem-container.navigation__item.sidebarApp-item:nth-of-type(n+2) > .ptDnd-dropzone-container.w100.navigationItem-container.navigation__link:hover,
     .navigation__link:active,
-    .navigation__link:hover  {
-        color: #202124;
+    .navigation__link:hover,
+    .sidebarApp-menu .menuLabel-link:hover  {
         fill: #d93025;
+        color: var(--sidebar-text-h);
         background: #e2e2e2;
         border-radius: 0 16px 16px 0;
     }
@@ -216,7 +220,7 @@ NOTE: If there are any issues please open a ticket.
         order:-1;
         margin-right: 10px;
     }
-    /*WANT TOOLTIPS? DELETE THE FOLLOWING CODE*/
+  /*WANT TOOLTIPS? DELETE THE FOLLOWING CODE*/
     .tooltip {
         display: none;
     }
@@ -277,7 +281,7 @@ NOTE: If there are any issues please open a ticket.
     .appsDropdown-button:hover {    
         color: #d93205;
     }
-    /*td {
+    td {
     font-family: sans-serif;
     font-size: 14px;
     vertical-align: top;
@@ -285,7 +289,7 @@ NOTE: If there are any issues please open a ticket.
     padding: 10px;
     background: #42414d;
     color: #afafba;
-    } */
+    }
 
 
     .pm-checkbox-fakecheck,
@@ -495,7 +499,7 @@ NOTE: If there are any issues please open a ticket.
     .pm-button.pm-button--primary {
     	background: #fce8e6;
     	color: #202124; 
-	    border: 1px #fce8e6;
+	border: 1px #fce8e6;
         background-repeat: no-repeat;
         background-position: center;
     }
@@ -526,10 +530,10 @@ NOTE: If there are any issues please open a ticket.
     
     .block-info-standard,
     .block-info {
-	    border-color: #fce8e6;
+    	border-color: #fce8e6;
     }
     .block-info-standard-warning {
-	    border-color: #d93025;
+	border-color: #d93025;
     }
     .pm-button.increase-surface-click {
     	background: #fce8e6;
@@ -595,8 +599,8 @@ NOTE: If there are any issues please open a ticket.
     .minicalendar {background: #121212; margin-left: 10px;}
     
     .calendar-grid-heading[aria-pressed="true"] .calendar-grid-heading-number {
-        color: #f1f3f4;
-        background-color: #d93025;
+      color: #f1f3f4;
+      background-color: #d93025;
     }
     .minicalendar-day[aria-current="date"][aria-pressed="true"]::before {
         background: #d93025;
