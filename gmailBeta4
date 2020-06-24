@@ -17,6 +17,7 @@ NOTE: If there are any issues please open a ticket.
     --bgcolor-item-column-list: #FFF;
     --bgcolor-unread-item-column-list: #fce8e6;
     --bgcolor-view-column-detail: #FFF;
+    --bordercolor-input: #FFF;
     --color-nav-active: #d93025;
     --bgcolor-subnav: #FFF;
     --bgcolor-searchbox-field: #fff;
@@ -33,6 +34,7 @@ NOTE: If there are any issues please open a ticket.
     --dropdown-text-h: #202124;
     --color-main-area: #afafba;
     --color-standard-text: #202124;
+    --dropDownbg: #FFF:}
  }
     
     .toolbar-separator {
@@ -51,12 +53,14 @@ NOTE: If there are any issues please open a ticket.
     --bgcolor-item-column-list: #121212;
     --bgcolor-unread-item-column-list: #fce8e6;
     --bgcolor-view-column-detail: #121212;
+    --bordercolor-input: transparent;
     --color-nav-active: #d93025;
     --bgcolor-subnav: #121212;
     --bgcolor-main-area: #121212;
     --color-standard-text: #f9f9fb;
     --fillcolor-logo: #d93025;
     --fillcolor-icons: #757575;
+    --border: transparent;
     --color-nav-link: #f9f9fb;
     --color-nav-active: #d93025;
     --email-text: #e2e2e2;
@@ -64,7 +68,9 @@ NOTE: If there are any issues please open a ticket.
     --dropdown-text: #AFAFBA;
     --dropdown-text-h: #202124;
     --color-main-area: #afafba;
-    --color-standard-text: #202124; }
+    --color-standard-text: #202124;
+    --dropDownbg: #15141a;
+
   }
     .sidebar .pm-button--large,
     .sidebar .pm-button--large:active {
@@ -90,7 +96,7 @@ NOTE: If there are any issues please open a ticket.
         border-color: transparent;
         transition: box-shadow .08s linear, min-width .15s cubic-bezier(0.4,0.0,0.2,1);
     }
-    
+
     .sidebar .pm-button--large:hover {
         box-shadow: 0 1px 3px 0 rgba(60,64,67,0.302),0 4px 8px 3px rgba(60,64,67,0.149);
         background: #f1f3f4;
@@ -162,6 +168,9 @@ NOTE: If there are any issues please open a ticket.
     .dropDown-logout-text {
         display: none;
     }
+
+
+
     .item-container, .item-container-row {
         padding: .60714em .85714em;
         border-bottom: 1px solid var(--bordercolor-input,#dde6ec);
@@ -174,10 +183,19 @@ NOTE: If there are any issues please open a ticket.
     #conversation-view .message .frame {
         background: var(--message-view-bg);
     }
+    .day-icon, .item-icon, .item-icon-compact {
+            width: 1.2rem;
+            height: 1.2rem;
+        }
+
+        .rounded50 {
+            border-radius: 0%;
+        }
 
     .message-container {
         color: var(--email-text);
     }
+
     .main {
         border-radius: 4px 4px 0 0;
         margin-right: 0px;
@@ -255,7 +273,9 @@ NOTE: If there are any issues please open a ticket.
     .appsDropdown-button:hover {    
         color: #d93205;
     }
-         
+ 
+
+
     .pm-checkbox-fakecheck,
     .pm-select-all .pm-checkbox-fakecheck,   
     .pm-select-all .pm-radio-fakeradio {
@@ -282,7 +302,7 @@ NOTE: If there are any issues please open a ticket.
     .dropDown-item.pt0-5.pb0-5.pl1.pr1.flex,
     .dropDown-item.p1.flex.flex-column,
     .dropDown-item.p1.flex
-       {background: #FFF}
+       {background: var(--dropDownbg); }
     .dropDown-item-link.nodecoration.pl1.pr1.pt0-5.pb0-5:hover,
     .dropDown-item-link.pl1.pr1.pt0-5.pb0-5.alignleft:hover {
 	    background: #fce9e6; color: #202124}
@@ -366,8 +386,8 @@ NOTE: If there are any issues please open a ticket.
     /*APP BOX*/
     .appsDropdown-container a,
     .appsDropdown-container.dropDown a {
-        color: #202124;
-        background: #FFF, var(--email-text);
+        color: #f1f3f4;
+        background: #15141a;
     }
     .appsDropdown-container a:focus,
     .appsDropdown-container a:hover,
@@ -395,6 +415,8 @@ NOTE: If there are any issues please open a ticket.
         transform: translateX(2.75em) translateX(-2px);
         border-color: #d93025;
     }
+
+
     .bg-primary {
         background-color: #15141a;
     }
@@ -465,7 +487,9 @@ NOTE: If there are any issues please open a ticket.
         background-repeat: no-repeat;
         background-position: center;
     }
-    .pm-button--primary:hover,
+pm-button--primary:focus,
+.pm-button.pm-button--primary:focus,
+pm-button--primary:hover,
     .pm-button.pm-button--primary:hover,
     .pm-button--primary:not(div):active,
     .pm-button.pm-button--primary:not(div):active {
