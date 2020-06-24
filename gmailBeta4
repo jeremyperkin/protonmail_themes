@@ -303,9 +303,10 @@ NOTE: If there are any issues please open a ticket.
     .dropDown-item.p1.flex.flex-column,
     .dropDown-item.p1.flex
        {background: var(--dropDownbg); }
+       
     .dropDown-item-link.nodecoration.pl1.pr1.pt0-5.pb0-5:hover,
     .dropDown-item-link.pl1.pr1.pt0-5.pb0-5.alignleft:hover {
-	    background: #fce9e6; color: #202124}
+    	background: #fce9e6; color: #202124}
     
     .notification-alert {
         background: #ec5858;
@@ -487,9 +488,9 @@ NOTE: If there are any issues please open a ticket.
         background-repeat: no-repeat;
         background-position: center;
     }
-pm-button--primary:focus,
-.pm-button.pm-button--primary:focus,
-pm-button--primary:hover,
+    .pm-button--primary:focus,
+    .pm-button.pm-button--primary:focus,
+    .pm-button--primary:hover,
     .pm-button.pm-button--primary:hover,
     .pm-button--primary:not(div):active,
     .pm-button.pm-button--primary:not(div):active {
