@@ -36,11 +36,12 @@ NOTE: If there are any issues please open a ticket.
     --color-standard-text: #202124;
     --dropDownbg: #FFF:
     --popup-bg: #FFF; }
- }
+
     
     .toolbar-separator {
        display: none;
     }
+
  @media (prefers-color-scheme: dark) {
   :root {
     --main-bg-color: #121212;
@@ -62,7 +63,7 @@ NOTE: If there are any issues please open a ticket.
     --fillcolor-logo: #d93025;
     --fillcolor-icons: #757575;
     --border: transparent;
-    --color-nav-link: #f9f9fb;
+    --color-nav-link: #afafba;
     --color-nav-active: #d93025;
     --email-text: #e2e2e2;
     --message-view-bg: #c6c6c6;
@@ -215,6 +216,7 @@ NOTE: If there are any issues please open a ticket.
         order:-1;
         margin-right: 10px;
     }
+    /*WANT TOOLTIPS? DELETE THE FOLLOWING CODE*/
     .tooltip {
         display: none;
     }
@@ -275,7 +277,15 @@ NOTE: If there are any issues please open a ticket.
     .appsDropdown-button:hover {    
         color: #d93205;
     }
- 
+    /*td {
+    font-family: sans-serif;
+    font-size: 14px;
+    vertical-align: top;
+    box-sizing: border-box;
+    padding: 10px;
+    background: #42414d;
+    color: #afafba;
+    } */
 
 
     .pm-checkbox-fakecheck,
@@ -485,7 +495,7 @@ NOTE: If there are any issues please open a ticket.
     .pm-button.pm-button--primary {
     	background: #fce8e6;
     	color: #202124; 
-	border: 1px #fce8e6;
+	    border: 1px #fce8e6;
         background-repeat: no-repeat;
         background-position: center;
     }
@@ -585,8 +595,8 @@ NOTE: If there are any issues please open a ticket.
     .minicalendar {background: #121212; margin-left: 10px;}
     
     .calendar-grid-heading[aria-pressed="true"] .calendar-grid-heading-number {
-      color: #f1f3f4;
-      background-color: #d93025;
+        color: #f1f3f4;
+        background-color: #d93025;
     }
     .minicalendar-day[aria-current="date"][aria-pressed="true"]::before {
         background: #d93025;
