@@ -1,7 +1,7 @@
 # Protonmail Themes
 Themes for Protonmail.com - Thoughtfully created.
 
-**NOTE** If there are any issues you find or even requests, please open an issue.
+**NOTE** If there are any requests or problems, please open an issue.
 
 [![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://paypal.me/yawnzz?locale.x=en_US)
 
