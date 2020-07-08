@@ -304,7 +304,7 @@ NOTE: If there are any issues please open a ticket.
     vertical-align: top;
     box-sizing: border-box;
     padding: 10px;
-    background: #42414d;
+    /*background: #42414d;  Fix for HTML formatted e-mails*/
     color: #afafba;
     }
 
