@@ -41,6 +41,7 @@ NOTE: If there are any issues please open a ticket.
     --composeBTN-hover-txt: #F1F3F4;
     --boxshadow-main:none; 
     --searchbox-bg: #FFF;
+    --bgcolor-item-column-active: #D93025;
 
 
 }
@@ -83,7 +84,8 @@ NOTE: If there are any issues please open a ticket.
     --btn-composeText: #3c4043;
     --composeBTN-hover-txt: #F1F3F4;
     --boxshadow-main:none;
-    --searchbox-bg: #afafba; }
+    --searchbox-bg: #afafba;
+--bgcolor-item-column-active: #D93025; }
 
   }
 /*FIX FOR FADED TEXT*/
@@ -338,7 +340,7 @@ NOTE: If there are any issues please open a ticket.
        {background: var(--popup-bg); }
     .dropDown-item-link.nodecoration.pl1.pr1.pt0-5.pb0-5:hover,
     .dropDown-item-link.pl1.pr1.pt0-5.pb0-5.alignleft:hover {
-    	background: #fce9e6; color: #202124}
+    	background: #fce9e6; color: #D93025}
     
     .notification-alert {
         background: #ec5858;
@@ -420,22 +422,22 @@ NOTE: If there are any issues please open a ticket.
     /*APP BOX*/
     .appsDropdown-container a,
     .appsDropdown-container.dropDown a {
-        color: #f1f3f4;
+        color: var(--dropdown-text);
         background: var(--popup-bg);
     }
     .appsDropdown-container a:focus,
     .appsDropdown-container a:hover,
     .appsDropdown-container.dropDown a:hover,
     .appsDropdown-container.dropDown a:focus {
-        color: #202124;
+        color: #d93025;
         background: #fce8e6; }
 
     .appsDropdown-container svg,
     .appsDropdown-container.dropDown svg {fill: #d93025}
 
-    .appsDropdown-container::before {
+    /*.appsDropdown-container::before {
         --bgcolor-main-area: #F1f3f4, var(--email-text);
-    }
+    }*/
     .appsDropdown-container.dropDown .dropDown:before,
     .appsDropdown-container.dropDown .dropDown-content:before,
     .appsDropdown-container.dropDown:before {
