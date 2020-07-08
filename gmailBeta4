@@ -618,4 +618,4 @@ NOTE: If there are any issues please open a ticket.
     }
     .pm-modalFooter .pm-button--primary[disabled] {
         background-color: #fce8e6;
-        color: #202124 }
+        color: #202124}
