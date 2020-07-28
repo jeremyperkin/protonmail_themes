@@ -95,6 +95,10 @@ NOTE: If there are any issues please open a ticket.
     	overflow: auto;
     	border-top-left-radius: 4px;
 }
+    .navigation__counterItem {
+        background: #d93025;
+    	color: #fff;
+}
     .sidebar .pm-button--large,
     .sidebar .pm-button--large:active {
        box-shadow: 0 1px 2px 0 rgba(60,64,67,0.302),0 1px 3px 1px rgba(60,64,67,0.149);
