@@ -198,6 +198,21 @@ NOTE: If there are any issues please open a ticket.
     .dropDown-logout-text {
         display: none;
     }
+    /*REMOVE SENDERS INITIALS IN MESSAGES VIEW - REPLACED WITH JUST A NORMAL BOX*/
+    
+    .items-column-list,
+    .item-icon { 
+        display: none; } 
+
+    .items-column-list,
+    .item-checkbox.inner-ratio-container { 
+    	opacity: 1; 
+	display: inline-flex; 
+	border: 1px solid var(--bordercolor-input, #dde6ec); 
+	min-width: 1.6rem; 
+	width: 1.6rem; 
+	height: 1.6rem; 
+	position: relative; }
 
 
 
