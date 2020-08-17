@@ -5,9 +5,9 @@ Themes for Protonmail.com - Thoughtfully created.
 
 [![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://paypal.me/yawnzz?locale.x=en_US)
 
-## ProtonMail Beta 4 Gmail Theme - now with Dark Mode. (updated on June 23th 2020 to release with DARK MODE v.01)  
+## ProtonMail Beta 4 Gmail Theme - now with Dark Mode. (updated on August 17th 2020 v.2)  
 Feel free to let me know what you think of the theme.
-
+v.2 has now been released.
 
 **DARK MODE**  Based on your chosen browser theme (dark/light), also works with macOS theme set to dark.  (tested on macOS 11 beta). 
 
