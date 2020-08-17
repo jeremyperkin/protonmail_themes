@@ -15,7 +15,7 @@ Feel free to let me know what you think of the theme.
 
 
 
-![gmail4.0](https://i.imgur.com/WPjEYWv.png)
+![gmail4.0](https://i.imgur.com/vKgYH8f.png)
 
 
 **Added Features**  
