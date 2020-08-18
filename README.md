@@ -10,6 +10,8 @@ Feel free to let me know what you think of the theme.
 v.2 has now been released.
 
 **DARK MODE**  Based on your chosen browser theme (dark/light), also works with macOS theme set to dark.  (tested on macOS 11 beta). 
+Created gmailbeta4-dark for those having trouble with OS dark mode switching. https://github.com/jeremyperkin/protonmail_themes/blob/master/gmailbeta4-dark.css
+
 
 ![nowwithdarkmode](https://i.imgur.com/JwlkRbC.png)
 
