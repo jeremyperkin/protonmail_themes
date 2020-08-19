@@ -647,3 +647,31 @@ NOTE: If there are any issues please open a ticket.
     .pm-modalFooter .pm-button--primary[disabled] {
         background-color: #fce8e6;
         color: #202124 }
+.items-column-list {
+    width:calc((100% + var(--width-sidebar, 24rem)) * 0.35)
+}
+
+.items-column-list-inner, .ReactVirtualized__Grid__innerScrollContainer {
+    border-right: 1px solid var(--bordercolor-input, #dde6ec);
+    min-height:100%
+}
+
+.items-column-list-inner--noborder {
+    border-right:0
+}
+
+.items-column-list--mobile {
+    width:100%
+}
+
+.isDarkMode .items-column-list-inner {
+    border-left:1px solid var(--bordercolor-input, #dde6ec)
+}
+
+.items-column-list, .items-column-list--mobile, .view-column-detail {
+    height:100%
+}
+
+.view-column-detail {
+    background:var(--bgcolor-view-column-detail, #fff)
+}
