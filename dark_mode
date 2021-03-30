@@ -1,0 +1,329 @@
+
+/***********************************************
+created by: jeremyperkin                  
+github: https://github.com/jeremyperkin/protonmail_themes/gmailBeta4.css
+reddit: yawn_zz
+NOTE: If there are any issues please open a ticket.
+***********************************************/
+/*Dark Theme for ProtonMail Theme*/
+
+body { font-size: 14px }
+
+body,
+.pm_opensans {
+    font-family: 'Lucida Grande', Verdana, Arial, sans-serif
+}
+
+/* UI Elements */
+
+.pm_buttons,
+.pm_button,
+.pm_toggle span.knob {
+    border-color: #999;
+}
+
+.pm_button {
+    background-image: -webkit-linear-gradient(#fff, #ddd);
+    background-image: linear-gradient(#fff, #ddd);
+    background: -moz-linear-gradient(#fff, #ddd)
+}
+
+.pm_button:active {
+    box-shadow: inset 0 0 2rem rgba(0,0,0,.1) ;
+}
+
+.pm_button.primary {
+    background: #7575a3;
+    background-image: -webkit-linear-gradient(#7575a3, #669);
+    background-image: linear-gradient(#7575a3, #669);
+}
+
+.pm_button.success {
+    background: #93bf73;
+    background-image: -webkit-linear-gradient(#93bf73, #aecf96);
+    background-image: linear-gradient(#93bf73, #aecf96)
+}
+
+.pm_button.error {
+    background: #c26164;
+    background-image: -webkit-linear-gradient(#c26164, #ad4346);
+    background-image: linear-gradient(#c26164, #ad4346);
+    color: #fff ;
+    border-color: #ad4346;
+}
+
+.pm_button.primary,
+.pm_button.success {
+    text-shadow: none;
+    color: #fff;
+    border-color: transparent
+}
+
+.pm_button.link,
+.pm_button.primary,
+.pm_button.success {
+    border-color: transparent
+}
+
+.pm_button.link {
+    background-color: transparent;
+    color: #8286c5;
+    text-decoration: underline;
+    box-shadow: none;
+    background-image: none;
+}
+
+.pm_button,
+.pm_buttons :not(.pm_dropdown) a,
+.pm_buttons :not(.pm_dropdown) button {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .1), inset 0 1px 0 rgba(255, 255, 255, .1);
+}
+
+.pm_buttons a {
+    background-image: -webkit-linear-gradient(#fff, #ddd);
+    background-image: linear-gradient(#fff, #ddd);
+    background: -moz-linear-gradient(#fff, #ddd)
+}
+
+.pm_buttons a.active,
+.pm_buttons button.active,
+.pm_buttons a:active,
+.pm_buttons button:active,
+.navigation-link:active,
+.navigation-link.active {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .1), inset 0 1px 0 rgba(255, 255, 255, .1), inset 0 2px 2px 0 rgba(0,0,0,.2), inset 0 0 2rem rgba(0,0,0,.1)
+}
+
+.pm_buttons .pm_dropdown a {
+    background: none;
+}
+
+.pm_table th { color: #555 }
+
+.pm_toggle { box-shadow: 0 0 0 1px #999 }
+
+.pm_toggle.off .on,
+.pm_toggle.off .off,
+.pm_toggle.on .on,
+.pm_toggle.on .off {
+    opacity: 1;
+}
+
+
+/* Layout */
+
+.sidebarApp-container,
+.mobileMode .sidebarApp-container,
+.headerDesktop-logo,
+.composerHeader-container { background: #333 }
+
+.search-form-fieldset,
+.searchForm-action-button-toggle:hover,
+.searchForm-action-button-advanced:hover { background-color: rgba(0,0,0,0.2) }
+
+.headerDesktop-container { background: #555 }
+
+.composer-container {
+    box-shadow: none !important;
+    border: 1px solid #333;
+}
+
+/* Mobile */
+
+#pm_header-mobile { background: #555 }
+
+
+/* Conversations */
+
+.conversation.read,
+.conversation.read .pm_labels label,
+#conversation-list-rows .conversation.read .subject .pm_labels,
+#conversation-list-rows .conversation.read .subject .pm_labels label,
+#conversation-list-columns .conversation.read .subject .pm_labels,
+#conversation-list-columns .conversation.read .subject .pm_labels label {
+    background: #ddd;
+}
+
+#conversation-list-rows .conversation.active,
+#conversation-list-columns .conversation.active {
+    background: #555;
+}
+
+.conversation.read .pm_labels label { box-shadow: 0.25rem 0 0 0.25rem #ddd }
+.conversation.active .pm_labels label {
+    box-shadow: 0.25rem 0 0 0.25rem #555;
+    background: #555;
+}
+
+#conversation-list-rows .conversation { border-color: #999 }
+
+
+/*
+ * ----------------------------------------
+ * Dark Theme Changes
+ * ----------------------------------------
+ */
+
+.sidebarApp-container,
+.mobileMode .sidebarApp-container,
+.headerDesktop-logo,
+.composerHeader-container,
+.headerDesktop-container {
+  background: #17172c;
+}
+
+#pm_main,
+#pm_buttons
+ {
+  color: #fff !important;
+  background: #252535 !important;
+}
+
+body #conversation-list-rows .conversation {
+  background: #4f527b;
+}
+
+body #conversation-list-rows .conversation.read {
+  background: #252535;
+}
+
+body #conversation-list-rows .conversation .subject h4 {
+  color: #fff;
+}
+
+.conversation.read,
+.conversation.read .pm_labels label,
+#conversation-list-rows .conversation.read .subject .pm_labels,
+#conversation-list-rows .conversation.read .subject .pm_labels label,
+#conversation-list-columns .conversation.read .subject .pm_labels,
+#conversation-list-columns .conversation.read .subject .pm_labels label {
+  background: #252535;
+}
+
+#conversation-view .frame {
+  background: #252535;
+  color: #f9f9fa;
+}
+
+.messageExtra-container>[class*=-container],
+#conversation-view .message .summary,
+#conversation-view .message .summary .labels,
+#conversation-view .message .summary .status,
+#conversation-view .message .summary .time,
+#conversation-view .message .summary .summary-right,
+#conversation-view .message .details,
+#conversation-view .message .frame .bodyDecrypted,
+#attachmentArea {
+  background: #252535 !important;
+  color: #f9f9fa;
+}
+
+#conversation-view header h1,
+#conversation-view header h1 .starButton a {
+  color: #fff;
+}
+
+#conversation-view .message .summary .time::after {
+  background: none;
+}
+
+.customRadio-input:checked + .customRadio-mask {
+  border-color: #252535;
+}
+
+.pm_toggle span.knob {
+  background: #252535;
+}
+
+a,
+.alert.alert-danger a, .alert.alert-info a, .alert.alert-success a, .alert.alert-warning a {
+  color: #7575a3;
+}
+
+.alert.alert-info {
+  background: #4b4c57;
+  color: #fff;
+}
+
+.pm_buttons,
+.pm_button,
+.pm_toggle span.knob {
+    border-color: #252535;
+}
+
+.pm_toggle { box-shadow: 0 0 0 1px #252535 }
+
+.pm_table table.plain th,
+.pm_table table td {
+  color: #fff;
+}
+
+#pm_settings .donate .well {
+  box-shadow: none;
+}
+
+.pm_form select,
+.pm_form .pm_select select {
+  color: #fff;
+  background: #252535;
+  border: 1px solid #fff;
+}
+
+.pm_form .pm_select .fa {
+  z-index: 3;
+}
+
+#plans .plans .plan.plus-plan footer,
+#plans .plans .plan.plus-plan header {
+  background: #252535;
+}
+
+#plans .plans .plan footer .cycle label,
+#plans .plans .plan footer .cycle {
+  color: #fff;
+}
+
+.pm_sort ul li.highlight {
+  background-color: #252535;
+}
+
+.pm_table table tr.hasTable table {
+  background-color: #252535 !important;
+}
+
+code {
+  color: #fff;
+}
+
+.searchForm-advanced-wrapper {
+  background: #252535;
+}
+
+.searchForm-advanced-container label,
+.pm_form .pm_select .fa {
+  color: #fff;
+}
+
+.settingsDashboard-overview-section-table-container .overviewSection-container .overviewSection-tbody-billing,
+.settingsDashboard-plans,
+.settingsDashboard-plans::after, .settingsDashboard-plans::before {
+  background: initial;
+}
+table {
+    background-color: rgb(37, 37, 53) !important;
+}
+
+div,
+td,
+p,
+tbody {
+    background-color: #252535 !important;
+    color: #f9f9fa !important;
+
+}
+div {
+    background-color: #252535 !important;
+}
+.modal-content h4 {
+    color: #f9f9fa;
+}
