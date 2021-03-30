@@ -316,7 +316,7 @@ table {
 div,
 td,
 p,
-tbody {
+tbody, tbody > th > tr > a {
     background-color: #252535 !important;
     color: #f9f9fa !important;
 
