@@ -5,7 +5,7 @@ github: https://github.com/jeremyperkin/protonmail_themes/gmailBeta4.css
 reddit: yawn_zz
 NOTE: If there are any issues please open a ticket.
 ***********************************************/
-/*Dark Theme for ProtonMail Theme*/
+/*Dark Theme for ProtonMail 3.16.60*/
 
 body { font-size: 14px }
 
@@ -169,7 +169,8 @@ body,
 .headerDesktop-logo,
 .composerHeader-container,
 .headerDesktop-container {
-  background: #252535;
+ /* background: #17172c; */
+ background: #252535 !important
 }
 
 #pm_main,
@@ -177,6 +178,10 @@ body,
  {
   color: #fff !important;
   background: #252535 !important;
+}
+.pm_dropdown.pm_dropdown-opened {
+    background: #252535;
+    color: #333;
 }
 
 body #conversation-list-rows .conversation {
@@ -205,6 +210,7 @@ body #conversation-list-rows .conversation .subject h4 {
   color: #f9f9fa;
 }
 
+.messageExtra-container> .container,
 .messageExtra-container>[class*=-container],
 #conversation-view .message .summary,
 #conversation-view .message .summary .labels,
@@ -295,6 +301,7 @@ code {
   color: #fff;
 }
 
+.searchForm-advanced-main,
 .searchForm-advanced-wrapper {
   background: #252535;
 }
@@ -316,14 +323,13 @@ table {
 div,
 td,
 p,
-tbody, tbody > tr > td > a {
+tbody,
+span {
     background-color: #252535 !important;
     color: #f9f9fa !important;
 
 }
-div {
-    background-color: #252535 !important;
-}
+
 .modal-content h4 {
     color: #f9f9fa;
 }
