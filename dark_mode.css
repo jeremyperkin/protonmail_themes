@@ -324,7 +324,7 @@ div,
 td,
 p,
 tbody,
-span {
+span, th {
     background-color: #252535 !important;
     color: #f9f9fa !important;
 
