@@ -28,14 +28,14 @@ NOTE: If there are any issues please open a ticket.
 .sidebarApp-container .sidebar-btn-compose:active {
     box-shadow: 0 1px 2px 0 rgba(60,64,67,0.302),0 1px 3px 1px rgba(60,64,67,0.149);
     -moz-osx-font-smoothing: grayscale;
-    font-family: 'Google Sans', Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+    font-family: Google Sans, Roboto, RobotoDraft, 'Helvetica', Arial, sans-serif;
     font-size: .875rem;
     letter-spacing: .25px;
     background-color: #fff;
     background-image: url(https://i.imgur.com/ieojGGR.png) !important;
     background-position: left;
     /*background-position-y: 6 !important;*/
-    background-position-x: 8px !important;
+    background-position-x: 25px !important;
     background-repeat: no-repeat;
     -moz-border-radius: 24px;
     border-radius: 24px;
@@ -57,9 +57,51 @@ NOTE: If there are any issues please open a ticket.
     box-shadow: 0 1px 3px 0 rgba(60,64,67,0.302),0 4px 8px 3px rgba(60,64,67,0.149);
 }
 
+/*SIDEBAR*/
+
+#ptSidebar,
+.headerSecuredDesktop-logo {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: inline;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-align: stretch;
+	-webkit-align-items: stretch;
+	-ms-flex-align: stretch;
+	align-items: stretch;
+	-webkit-align-content: space-between;
+	-ms-flex-line-pack: justify;
+	align-content: space-between;
+	max-width: 254px;
+	min-width: 254px;
+	overflow: auto;
+	float: left;
+	background: #fff;
+	height: calc(100% - 61px);
+	will-change: transform;
+}
 
 
-/*******/
+
+.sidebarApp-container .sidebar-btn-back {
+    border: 1px solid hsla(0,0%,100%,.6);
+    color: #202124;
+    text-align: center;
+}
+
+#pm_sidebar {
+    height: 702px;
+    width: 239px;
+}
+
+
+
+/**SEARCH**/
 
 
 .searchForm-container {
@@ -69,10 +111,12 @@ NOTE: If there are any issues please open a ticket.
     display: inline-flex;
     position: relative;
     width: calc(100% - 700px);
-    max-width: 27%;
+    max-width: 720px;
     margin-left: 42px;
     box-sizing: border-box;
     padding-top: 6px;
+    -webkit-transition: background 100ms ease-in,width 100ms ease-out;
+    transition: background 100ms ease-in,width 100ms ease-out;
 
 }
 
@@ -82,6 +126,7 @@ NOTE: If there are any issues please open a ticket.
     top: 0;
     z-index: 2;
     border-radius: 8px;
+    border: 1px solid transparent;
     padding: 35px 0 0;
     right: 0;
     background: #f1f3f4 !important;
@@ -125,6 +170,12 @@ html.protonmail ::-moz-placeholder {
     color: #202124;
     padding-left: 10px;  
     background: #f1f3f4 !important;
+}
+body #pm_main {
+    height: calc(100% - 61px);
+    float: left;
+    width: calc(100% - 254px);
+    padding-left: 5px;
 }
 
 .searchForm-action-button-advanced,
@@ -245,9 +296,16 @@ html.protonmail ::-moz-placeholder {
 .dropdown-label-search .fa.dropdown-label-search-icon {
     color: #fce8e6; }
 
+.dropdown-folder-create,
+.createLabel-new-label {
+    color: #000;
+}
+
 .dropdown-folder-create-button,
-.createLabel-button {
-    color: #fce8e6; }
+.createLabel-button
+ {
+    color: #fce8e6;
+ }
 
 .customCheckbox-container:hover .customCheckbox-mask,
 .customMaskInput-container:hover .customCheckbox-mask {
@@ -257,41 +315,11 @@ html.protonmail ::-moz-placeholder {
     background: #d93025;
     width: 5px; }
 
-/*SIDEBAR*/
-
-#ptSidebar {
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: inline;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-webkit-flex-direction: column;
-	-ms-flex-direction: column;
-	flex-direction: column;
-	-webkit-box-align: stretch;
-	-webkit-align-items: stretch;
-	-ms-flex-align: stretch;
-	align-items: stretch;
-	-webkit-align-content: space-between;
-	-ms-flex-line-pack: justify;
-	align-content: space-between;
-	width: 200px;
-	min-width: 200px;
-	overflow: auto;
-	float: left;
-	background: #fff;
-	height: calc(100% - 61px);
-	will-change: transform;
-}
 
 
 
-.sidebarApp-container .sidebar-btn-back {
-    border: 1px solid hsla(0,0%,100%,.6);
-    color: #202124;
-    text-align: center;
-}
+
+
 
 #customTheme:not(:empty) ~ #body .sidebarApp-container .sidebarApp-item .navigationItem-aside, 
 #customTheme:not(:empty) ~ #body .sidebarApp-container .sidebarApp-menu .sidebarApp-item::after {
@@ -400,7 +428,7 @@ body section.sidebar div.footer div.storage strong {
 
 
 #pm_composer .composer header {
-    background: #404040;
+    background: #d93025;
     color: #fff; }
 
 .modal-header {
@@ -675,7 +703,7 @@ body .cg-notify-message.notification-success {
     margin: 16px; /*added margin*/
 }
 body #pm_main {
-    padding-left: 50px;
+    padding-left: 40px;
 
 }
 body section.sidebar {
@@ -685,10 +713,7 @@ body section.sidebar {
     padding: 10px 10px 10px 4px;
     background-color: #FFF;
 }
-#pm_sidebar {
-    height: 702px;
-    width: 187px;
-}
+
 #pm_main {
     color: #202124;
     border-radius: 0;
@@ -737,7 +762,7 @@ body #conversation-list-rows .conversation .senders {
 
 .navigationItem-title {
     overflow: hidden;
-    padding-right: 10px;
+    padding-right: 15px;
     padding-left: 14px;
 }
 .sidebarApp-item .sidebarApp-label {
@@ -757,8 +782,6 @@ body #conversation-list-rows .conversation.read,
 body #pm_main {
     height: calc(100% - 61px);
     float: left;
-    width: calc(100% - 201px);
-    padding-left: 20px;
 }
 
 .menuLabel-item .menuLabel-title {
@@ -880,6 +903,25 @@ body #conversation-list-rows .conversation .size {
 }
 
 
+.conversation {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    -webkit-box-shadow: inset 0 -1px 0 0 rgba(100,121,143,0.122);
+    box-shadow: inset 0 -1px 0 0 rgba(100,121,143,0.122);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    position: relative;
+}
+.conversation.active {
+    box-shadow: inset 1px 0 0 #dadce0,inset -1px 0 0 #dadce0,0 1px 2px 0 rgba(60,64,67,.3),0 1px 3px 1px rgba(60,64,67,.15);
+    z-index: 1;
+    color: #d93025;
+}
+.conversation:hover {
+    box-shadow: inset 1px 0 0 #dadce0,inset -1px 0 0 #dadce0,0 1px 2px 0 rgba(60,64,67,.3),0 1px 3px 1px rgba(60,64,67,.15);
+    z-index: 2;
+}
 
 .navigation-upgrade-item {
     visibility: hidden;
