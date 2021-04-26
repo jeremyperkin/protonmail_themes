@@ -311,9 +311,7 @@ body #pm_main {
 .customMaskInput-container:hover .customCheckbox-mask {
     border-color: #d93025 !important; }
 
-.conversation.marked::before {
-    background: #d93025;
-    width: 5px; }
+
 
 
 
@@ -417,7 +415,7 @@ body section.sidebar div.footer div.storage strong {
     color: #202124; }
 
 .storageBar {
-    background-color: #FFF;
+    background-color: #f1f3f4 !important;
 }
 
 .storageBar .storageBar-progress {
@@ -746,11 +744,7 @@ body section.sidebar {
     padding: 0 10px 0 14px;
 }
 
-body #conversation-list-rows .conversation .fa-star,
-body #conversation-list-rows .conversation .fa-star-o { 
-    padding: 0;
-    width: 20px;
-}
+
 
 html.protonmail .ellipsis {
     padding-left: 0;
@@ -771,14 +765,7 @@ body #conversation-list-rows .conversation .senders {
     padding-left: 14px;
     padding-right: 10px;
 }
-body #conversation-list-rows .conversation {
-    background: #F4F7F7 !important;
-    border: transparent;
-}
-body #conversation-list-rows .conversation.read,
-.conversation.read {
-    background: #f1f3f4 !important;
-}
+
 body #pm_main {
     height: calc(100% - 61px);
     float: left;
@@ -788,25 +775,7 @@ body #pm_main {
     padding-left: 14px;
 }
 
-body #conversation-list-rows .conversation time.time {
-    float: right;
-    text-align: right;
-    font-style: normal;
-    position: relative;
-    padding-left: 4;
-    white-space: nowrap;
-    padding-right: 14px;
-}
 
-body #conversation-list-rows .conversation .size {
-    width: 6.5rem;
-    text-align: right;
-    padding: 10px;
-}
-.conversation .conversation-icon-attachment {
-    visibility: hidden;
-    padding: 10px;
-}
 .paginator-disabled-main .paginator-dropdown, 
 .paginator-disabled-next .paginator-btn-next, 
 .paginator-disabled-previous .paginator-btn-previous {
@@ -873,6 +842,29 @@ body #conversation-list-rows .conversation .size {
     color: #000 !important;
     border-color: #15141a !important;}
 
+.conversation.marked::before {
+    background: #d93025;
+    width: 5px; 
+}
+    
+body #conversation-list-rows .conversation .fa-star,
+body #conversation-list-rows .conversation .fa-star-o { 
+    padding: 0;
+    width: 20px;
+}
+body #conversation-list-rows .conversation {
+    background: #F4F7F7 !important;
+    border: transparent;
+}
+body #conversation-list-rows .conversation.read,
+.conversation.read {
+    background: #f1f3f4 !important;
+    }
+.conversation.marked.hasLabels.hasAttachments,
+.conversation.marked {
+        background: #fff !important;
+}
+
 #conversation-view .message {
     border: 1px solid transparent !important;
 }
@@ -884,7 +876,25 @@ body #conversation-list-rows .conversation .size {
 #conversation-view .message .summary .summary-right {
     background: #ffffff !important;
 }
+body #conversation-list-rows .conversation time.time {
+    float: right;
+    text-align: right;
+    font-style: normal;
+    position: relative;
+    padding-left: 4;
+    white-space: nowrap;
+    padding-right: 14px;
+}
 
+body #conversation-list-rows .conversation .size {
+    width: 6.5rem;
+    text-align: right;
+    padding: 10px;
+}
+.conversation .conversation-icon-attachment {
+    visibility: hidden;
+    padding: 10px;
+}
 
 #conversation-view .message .summary .labels, 
 #conversation-view .message .summary .location.folders, 
@@ -916,7 +926,7 @@ body #conversation-list-rows .conversation .size {
 .conversation.active {
     box-shadow: inset 1px 0 0 #dadce0,inset -1px 0 0 #dadce0,0 1px 2px 0 rgba(60,64,67,.3),0 1px 3px 1px rgba(60,64,67,.15);
     z-index: 1;
-    color: #d93025;
+    color: #000;
 }
 .conversation:hover {
     box-shadow: inset 1px 0 0 #dadce0,inset -1px 0 0 #dadce0,0 1px 2px 0 rgba(60,64,67,.3),0 1px 3px 1px rgba(60,64,67,.15);
