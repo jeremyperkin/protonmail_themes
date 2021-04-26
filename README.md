@@ -32,7 +32,7 @@ Created gmailbeta4-dark for those having trouble with OS dark mode switching. ht
 
 ## GMail Theme (**NON PROTONMAIL BETA 4**)
 
-![gmailv3](https://i.imgur.com/wo3bE4W.png)
+![gmailv3](https://i.imgur.com/Vfy3Uso.png)
 
 
 ## Material Proton Theme
