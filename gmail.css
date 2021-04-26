@@ -777,7 +777,7 @@ body #conversation-list-rows .conversation {
 }
 body #conversation-list-rows .conversation.read,
 .conversation.read {
-    background: #FFF !important;
+    background: #f1f3f4 !important;
 }
 body #pm_main {
     height: calc(100% - 61px);
